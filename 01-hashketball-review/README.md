@@ -1,5 +1,7 @@
 # Hashketball Review
 
+I am making changes 
+
 ## Objectives
 
 * Distinguish between data types in Ruby
