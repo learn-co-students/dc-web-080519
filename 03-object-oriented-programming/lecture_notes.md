@@ -1,3 +1,5 @@
+Mention Single Responsibility Principle
+
 ```ruby
 # what is the data type of x?
 # what is the value of x?
