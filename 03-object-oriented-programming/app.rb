@@ -29,7 +29,13 @@ class Cat
         return @@all
     end
 
-
+    def self.all_cat_names
+        # get all the cats from self.all
+        # collect/map name of each
+        self.all.collect do |cat|
+            cat.name
+        end
+    end
 
     def self.cats_are_great
         puts "Cats are the best animal"
@@ -91,12 +97,22 @@ lexi = Cat.new("Lexi", "orange", 4, 3)
 # lexi.say_hello
 # lexi.name = "Lexi"
 # lexi.color = "orange"
-print Cat.all 
-puts "\n*********\n"
+# print Cat.all 
+# puts "\n*********\n"
 ella = Cat.new("Ella", "black", 10)
+nermal = Cat.new("Nermal", "grey", 4)
 # ella.name = "Ella"
 # ella.color = "black"
 # Cat.all # [<Cat: Ella>, <Cat: Lexi>]
-print Cat.all
+# print Cat.all
+puts "\n*********\n"
 
-Cat.all_names => ["Lexi", "Ella"]
+print Cat.all_cat_names
+# puts "\n*********\n"
+
+# Cat.all.delete(nermal)
+# print Cat.all
+# puts "\n*********\n"
+# print Cat.all_cat_names
+
+# Cat.all_names => ["Lexi", "Ella"]
