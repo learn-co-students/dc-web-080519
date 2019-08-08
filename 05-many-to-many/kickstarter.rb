@@ -1,38 +1,66 @@
+require_relative "backerproject.rb"
+
 class Backer
 
-    attr_accessor :backed_projects, :name
+    attr_accessor :name
 
     def initialize(name)
         @name = name
-        @backed_projects = []
     end
 
     def back_project(project)
-        self.backed_projects << project
-        project.backers << self
+        BackerProject.new(self, project)
     end
+
+    def projects
+        # lists all projects this backer 
+        # has backed
+
+        # iterate over all BackerProjects
+        # select the rows this backer is 
+        # involved in
+        bp_rows = BackerProject.all.select do |bp|
+            bp.backer == self
+        end
+
+        bp_rows.map {|row| row.project}
+
+    end
+
 end
 
 class Project
 
-    attr_accessor :backers, :name
+    attr_accessor :name
 
     def initialize(name)
         @name = name
-        @backers = []
     end
 
     def add_backer(backer)
-        backer.backed_projects << self
-        self.backers << backer
+        BackerProject.new(backer, self)
     end
 
 end
 
-hoverboard = Project.new('Hoverboard')
+doc_brown = Backer.new("Doc Brown")
 marty = Backer.new("Marty McFly")
 
+hoverboard = Project.new('Hoverboard')
 hoverboard.add_backer(marty)
+hoverboard.add_backer(doc_brown)
 
-puts hoverboard.backers.collect {|x| x.name}
-puts marty.backed_projects.collect {|x| x.name}
+selflacing_shoes = Project.new("Self Lacing Shoes")
+flux_capacitor = Project.new("Flux Capacitor")
+instant_food = Project.new("Instant Food")
+
+selflacing_shoes.add_backer(marty)
+flux_capacitor.add_backer(marty)
+instant_food.add_backer(doc_brown)
+
+
+
+# marty.remove_project(hoverboard)
+# puts hoverboard.backers.collect {|x| x.name}
+# puts "\n*****\n"
+puts marty.projects

@@ -1,6 +1,7 @@
 require "pry"
 require_relative "./tweet.rb"
 require_relative "./user.rb"
+require_relative "./like.rb"
 
 coffee_dad = User.new("Coffee Dad")
 soda_mom = User.new("Soda Mom")
@@ -13,3 +14,6 @@ tweet5 = Tweet.new("I need tea", soda_mom)
 tweet6 = Tweet.new("I like tea", soda_mom)
 tweet7 = Tweet.new("Life is a wonderous place", soda_mom)
 
+soda_mom.like_tweet(tweet1)
+
+print Like.all 
