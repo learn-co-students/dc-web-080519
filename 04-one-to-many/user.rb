@@ -14,5 +14,10 @@ class User
             tweet.user == self 
         end
     end
+
+    def post_tweet(message)
+        Tweet.new(message, self)
+    end
+
 end
 

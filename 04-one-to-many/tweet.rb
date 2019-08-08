@@ -13,4 +13,10 @@ class Tweet
         @@all 
     end
 
+    def username
+        return self.user.username
+    end
+
 end
+
+

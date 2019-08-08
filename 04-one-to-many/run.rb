@@ -25,3 +25,9 @@ puts "User knows their tweets?"
 puts coffee_dad.tweets.include?(tweet1)
 puts coffee_dad.tweets.include?(tweet2)
 puts !coffee_dad.tweets.include?(tweet3)
+
+puts "Tweet knows its username?"
+puts tweet1.username == "Coffee Dad"
+
+tweet4 = coffee_dad.post_tweet("I need more coffee")
+puts coffee_dad.tweets.include?(tweet4)
