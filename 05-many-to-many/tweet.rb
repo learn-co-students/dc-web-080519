@@ -17,4 +17,11 @@ class Tweet
         @@all
     end
 
+    def likers
+        Like.all.select do |like|
+            like.tweet == self
+        end.collect {|like| like.user}
+
+    end
+
 end

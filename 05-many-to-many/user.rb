@@ -22,9 +22,20 @@ class User
     end
 
     def liked_tweets
-        # returns a collection of all the tweets this user has liked
+        # returns a collection of all the tweets 
+        # this user has liked
 
+        # go over all the Likes
+        # choose the ones whose user is the person calling the function
+        # take the selected Likes and pull out the Tweets
+        likes = Like.all.select do |like|
+            like.user == self
+        end
+        likes.collect {|like| like.tweet }
     end
 
+    def liked_tweet_messages
+        self.liked_tweets.collect {|tweet| tweet.message}
+    end
 end
 

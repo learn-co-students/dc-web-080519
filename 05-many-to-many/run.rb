@@ -15,5 +15,8 @@ tweet6 = Tweet.new("I like tea", soda_mom)
 tweet7 = Tweet.new("Life is a wonderous place", soda_mom)
 
 soda_mom.like_tweet(tweet1)
+soda_mom.like_tweet(tweet2)
+soda_mom.like_tweet(tweet3)
 
-print Like.all 
+# print soda_mom.liked_tweet_messages
+print tweet1.likers
