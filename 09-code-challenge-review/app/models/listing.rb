@@ -53,4 +53,20 @@ class Listing
     end
   end
 
+  def self.most_popular_with_hash
+    hash = {}
+    Trip.all.each do |trip|
+      if hash[trip.listing]
+        hash[trip.listing] += 1
+      else
+        hash[trip.listing] = 1
+      end
+    end
+    binding.pry
+    sorted_hash = hash.sort_by do |key,value|
+      value
+    end #sort hash by ascending order
+    sorted_hash[-1][0] #get only the key of the last key value pair of the sorted hash
+  end
+
 end
