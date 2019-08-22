@@ -5,9 +5,10 @@ def reload
 end
 
 flatiron = Bakery.new("Flatiron Bakery")
+yummy_time = Bakery.new("Yummy Time")
 
 cake = Dessert.new("Chocolate Cake", flatiron)
-cookies = Dessert.new("Cookies", flatiron)
+cookies = Dessert.new("Cookies", yummy_time)
 
 egg = Ingredient.new("Egg", 50, cake)
 flour = Ingredient.new("Flour", 100, cake)
@@ -18,6 +19,7 @@ peanuts = Ingredient.new("Peanuts", 50, cookies)
 
 # chips.bakery
 
+# puts chips.name == "Chips"
 
 binding.pry
 0
