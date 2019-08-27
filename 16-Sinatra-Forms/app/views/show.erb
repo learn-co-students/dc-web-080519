@@ -1,0 +1,14 @@
+<h1>Book Page</h1>
+
+<h2><%= @book.title %></h2>
+<h4>By: <%= @book.author %></h4>
+<h4><%= @book.snippet %></h4>
+
+<a href="/books">View All Books</a>
+
+<a href="/books/<%= @book.id %>/edit">Edit This Book</a>
+
+<form action="/books/<%= @book.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete">
+</form>
