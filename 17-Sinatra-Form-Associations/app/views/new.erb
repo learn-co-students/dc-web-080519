@@ -1,0 +1,23 @@
+<h1>Create Book</h1>
+<form action="/books" method="post">
+  <label for="title">Book Title:</label>
+  <input type="text" name="title" >
+
+  <label for="author">Book Author:</label>
+  <select name="author_id">
+    <% @authors.each do | author | %>
+      <option value="<%= author.id %>"><%= author.name %></option>
+    <% end %>
+  </select>
+
+
+  <label for="snippet">Book Snippet:</label>
+  <input type="text" name="snippet" >
+
+  <input type="submit" value="Create!">
+</form>
+
+
+
+
+<!-- <input type="text" name="author" > -->

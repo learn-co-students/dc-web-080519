@@ -1,0 +1,13 @@
+<h1>Author Page</h1>
+
+<p><%= @author.name %></p>
+
+<ol>
+  <% @author.books.each do |book| %>
+    <li>
+      <a href="/books/<%= book.id %>">
+        <%= book.title %>
+      </a>
+    </li>
+  <% end %>
+</ol>
