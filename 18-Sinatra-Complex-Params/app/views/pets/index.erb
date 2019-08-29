@@ -1,0 +1,9 @@
+<h1>Pets Index</h1>
+<ul>
+<% @pets.each do |pet| %>
+<li><a href="/pets/<%= pet.id %>"><%= pet.name %></a></li>
+<% end %>
+</ul>
+
+<a href="/pets/new">New Pet</a> | 
+<a href="/owners">Owners Index</a>

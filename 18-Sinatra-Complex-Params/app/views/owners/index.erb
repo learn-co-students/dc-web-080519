@@ -1,0 +1,11 @@
+<img src="https://static.keygames.com/games/assets/tiles/0/93290/51992/300x300_1-292986.jpg?r=0" alt="">
+<h1>Owners</h1>
+<ul>
+<% @owners.each do |owner| %>
+  <li><a href=<%="/owners/#{owner.id}"%>><%= owner.name %></a></li>
+<% end %>
+</ul>
+<br>
+
+<a href="/owners/new">New Owner</a> |
+<a href="/pets">Pets Index</a>
