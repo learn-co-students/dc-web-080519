@@ -1,0 +1,6 @@
+<h1>FLAGS FLAGS FLAGS</h1>
+
+<% @flags.each do |flag| %>
+    <a href="flags/<%= flag.id %>"<h4><%= flag.region %></h4></a>
+    <img src=<%= flag.image_url %>>
+<% end %>
