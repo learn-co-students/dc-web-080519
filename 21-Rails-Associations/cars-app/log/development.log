@@ -1,0 +1,3152 @@
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCars (20190903134242)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "cars" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "mileage" integer, "seats" integer)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190903134242"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-03 13:45:11.755952"], ["updated_at", "2019-09-03 13:45:11.755952"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCars (20190903134242)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "cars" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "mileage" integer, "seats" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190903134242"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-03 13:45:43.396492"], ["updated_at", "2019-09-03 13:45:43.396492"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCars (20190903134242)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "cars" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "mileage" integer, "seats" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190903134242"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-03 13:48:15.702036"], ["updated_at", "2019-09-03 13:48:15.702036"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-09-03 10:01:25 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bgonzalez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bgonzalez/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.7ms | Allocations: 481)
+Completed 200 OK in 21ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 2748)
+
+
+Started GET "/wergthjgfdsasdfghjmk" for ::1 at 2019-09-03 10:01:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/wergthjgfdsasdfghjmk"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/wergthjgfdsasdfghjmk" for ::1 at 2019-09-03 10:02:33 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/wergthjgfdsasdfghjmk"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cars" for ::1 at 2019-09-03 10:04:41 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#index as HTML
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.0ms | Allocations: 2259)
+
+
+  
+ActionController::MissingExactTemplate (CarsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cars" for ::1 at 2019-09-03 10:05:44 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 81)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/bgonzalez/Desktop/20-Rails-RESTful-CRUD/cars-app/public/packs
+Completed 200 OK in 3660ms (Views: 3658.7ms | ActiveRecord: 0.0ms | Allocations: 1349394)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 10:07:49 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 6001)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Create (0.4ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "mileage", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["make", "Honda"], ["model", "CRV"], ["mileage", 6000], ["seats", 5], ["created_at", "2019-09-03 14:08:02.660251"], ["updated_at", "2019-09-03 14:08:02.660251"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "mileage", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["make", "Subaru"], ["model", "Forester"], ["mileage", 6000], ["seats", 5], ["created_at", "2019-09-03 14:08:02.664342"], ["updated_at", "2019-09-03 14:08:02.664342"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Create (0.2ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "mileage", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["make", "HotWheels"], ["model", "SuperChargedCar"], ["mileage", 6000], ["seats", 2], ["created_at", "2019-09-03 14:08:02.667496"], ["updated_at", "2019-09-03 14:08:02.667496"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cars"[0m
+Started GET "/cars" for ::1 at 2019-09-03 10:10:50 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 5594)
+Completed 200 OK in 1134ms (Views: 1121.0ms | ActiveRecord: 0.8ms | Allocations: 1347674)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 10:13:14 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 22222.4ms | Allocations: 88930)
+Completed 500 Internal Server Error in 22267ms (ActiveRecord: 0.1ms | Allocations: 121650)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `<<'
+app/views/cars/index.html.erb:6
+app/views/cars/index.html.erb:4
+Started GET "/cars" for ::1 at 2019-09-03 10:13:43 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (1.7ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 4927.5ms | Allocations: 181043)
+Completed 500 Internal Server Error in 4975ms (ActiveRecord: 1.7ms | Allocations: 488416)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `<<'
+app/views/cars/index.html.erb:6
+app/views/cars/index.html.erb:4
+Started GET "/cars" for ::1 at 2019-09-03 10:15:15 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 11457.5ms | Allocations: 38949)
+Completed 500 Internal Server Error in 11484ms (ActiveRecord: 0.5ms | Allocations: 51607)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `<<'
+app/views/cars/index.html.erb:6
+app/views/cars/index.html.erb:4
+Started GET "/cars" for ::1 at 2019-09-03 10:15:37 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.9ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 25277.3ms | Allocations: 221088)
+Completed 500 Internal Server Error in 25332ms (ActiveRecord: 0.9ms | Allocations: 554884)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `<<'
+app/views/cars/index.html.erb:6
+app/views/cars/index.html.erb:4
+Started GET "/cars" for ::1 at 2019-09-03 10:16:21 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#index as HTML
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/controllers/cars_controller.rb:9:in `index'
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/controllers/cars_controller.rb:9:in `index'
+  [1m[36mCACHE Car Load (0.0ms)[0m  [1m[34mSELECT "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/controllers/cars_controller.rb:9:in `index'
+Completed 500 Internal Server Error in 49791ms (ActiveRecord: 0.9ms | Allocations: 730250)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `index'
+app/controllers/cars_controller.rb:9:in `index'
+Started GET "/cars" for ::1 at 2019-09-03 10:17:21 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (1.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 185.9ms | Allocations: 1485967)
+Completed 200 OK in 29527ms (Views: 29481.4ms | ActiveRecord: 14.4ms | Allocations: 218887292)
+
+
+Started GET "/cars/1" for ::1 at 2019-09-03 10:18:23 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/cars/1"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cars/1" for ::1 at 2019-09-03 10:18:39 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for CarsController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cars/1" for ::1 at 2019-09-03 10:19:10 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 2001)
+
+
+  
+ActionController::MissingExactTemplate (CarsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cars/1" for ::1 at 2019-09-03 10:19:48 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+Completed 200 OK in 1108ms (Views: 1107.4ms | ActiveRecord: 0.0ms | Allocations: 1341022)
+
+
+Started GET "/cars/1" for ::1 at 2019-09-03 10:20:46 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 111)
+Completed 200 OK in 21ms (Views: 8.0ms | ActiveRecord: 1.2ms | Allocations: 12038)
+
+
+Started GET "/cars/1" for ::1 at 2019-09-03 10:21:31 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 160)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 6554)
+
+
+Started GET "/cars/2" for ::1 at 2019-09-03 10:21:36 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 16)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.5ms | Allocations: 5469)
+
+
+Started GET "/carsasdasda" for ::1 at 2019-09-03 10:22:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/carsasdasda"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cars/1" for ::1 at 2019-09-03 10:22:44 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+Completed 200 OK in 112257ms (Views: 13.5ms | ActiveRecord: 1.2ms | Allocations: 45461)
+
+
+Started GET "/cars/1" for ::1 at 2019-09-03 10:24:42 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 233)
+Completed 200 OK in 500ms (Views: 490.9ms | ActiveRecord: 0.6ms | Allocations: 11460)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 10:24:45 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (1.9ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 844)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 1.9ms | Allocations: 5955)
+
+
+Started GET "/cars/1" for ::1 at 2019-09-03 10:24:46 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 64)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 5521)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 10:24:47 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 653)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 5615)
+
+
+Started GET "/cars/2" for ::1 at 2019-09-03 10:24:48 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 60)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 5518)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 10:24:49 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 653)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 5617)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:25:53 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#new as HTML
+Completed 406 Not Acceptable in 4ms (ActiveRecord: 0.0ms | Allocations: 1907)
+
+
+  
+ActionController::MissingExactTemplate (CarsController#new is missing a template for request formats: text/html):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cars/new" for ::1 at 2019-09-03 10:27:41 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 369)
+Completed 200 OK in 17ms (Views: 8.7ms | ActiveRecord: 0.7ms | Allocations: 10977)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:28:55 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2694)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3869)
+
+
+  
+ActionView::Template::Error (private method `test' called for #<Car:0x00007fc8b38182a0>):
+    1: <%= form_for(@car) do |f| %>
+    2:   <%= f.text_field :test %>
+    3: 
+    4: <% end %>
+  
+app/views/cars/new.html.erb:2
+app/views/cars/new.html.erb:1
+Started GET "/cars/new" for ::1 at 2019-09-03 10:29:11 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2693)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 3873)
+
+
+  
+ActionView::Template::Error (undefined method `example123' for #<Car:0x00007fc8ac7a9d48>):
+    1: <%= form_for(@car) do |f| %>
+    2:   <%= f.text_field :example123 %>
+    3: 
+    4: <% end %>
+  
+app/views/cars/new.html.erb:2
+app/views/cars/new.html.erb:1
+Started GET "/cars/new" for ::1 at 2019-09-03 10:30:34 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 42.7ms | Allocations: 7597)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms | Allocations: 13423)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:30:49 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1086)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 6055)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:30:51 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1216)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 7120)
+
+
+Started POST "/cars" for ::1 at 2019-09-03 10:32:41 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"7IKr4gAKAhqr1JU+im6pC+fp148fmm+g9EtjKM+ZbmWXP3c5CrOIdmkPAdwu7wxOTCgPpMYzcLqZO8j9IMAtSw==", "car"=>{"make"=>"Jeep", "model"=>"Patriot", "mileage"=>"52000", "seats"=>"5"}, "commit"=>"Sell us this car!"}
+No template found for CarsController#create, rendering head :no_content
+Completed 204 No Content in 121304ms (ActiveRecord: 0.0ms | Allocations: 4473)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:34:48 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1061)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.9ms | Allocations: 9108)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for(@car) do |f| %>
+  <%= "#{Make: }" %>
+  
+  <%= f.text_field :make %>
+  <%= f.label :model %>
+  <%= f.text_field :model %>
+  <%= f.label :mileage %>
+  <%= f.number_field :mileage %>
+  <%= f.label :seats %>
+  <%= f.number_field :seats %>
+  <%= f.submit "Sell us this car!" %>
+<% end %>
+
+):
+1:    <%= form_for(@car) do |f| %>
+2:      <%= "#{Make: }" %>
+3:      
+4:      <%= f.text_field :make %>
+5:      <%= f.label :model %>
+6:      <%= f.text_field :model %>
+7:      <%= f.label :mileage %>
+8:      <%= f.number_field :mileage %>
+9:      <%= f.label :seats %>
+10:      <%= f.number_field :seats %>
+11:      <%= f.submit "Sell us this car!" %>
+12:    <% end %>
+  
+app/views/cars/new.html.erb:2: syntax error, unexpected ':', expecting tSTRING_DEND
+app/views/cars/new.html.erb:11: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+app/views/cars/new.html.erb:14: unterminated string meets end of file
+app/views/cars/new.html.erb:14: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+app/views/cars/new.html.erb:2: syntax error, unexpected ':', expecting tSTRING_DEND
+app/views/cars/new.html.erb:11: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+app/views/cars/new.html.erb:14: unterminated string meets end of file
+app/views/cars/new.html.erb:14: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+app/views/cars/new.html.erb:2: syntax error, unexpected ':', expecting tSTRING_DEND
+app/views/cars/new.html.erb:11: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+app/views/cars/new.html.erb:14: unterminated string meets end of file
+app/views/cars/new.html.erb:14: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+app/views/cars/new.html.erb:2: syntax error, unexpected ':', expecting tSTRING_DEND
+app/views/cars/new.html.erb:11: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+app/views/cars/new.html.erb:14: unterminated string meets end of file
+app/views/cars/new.html.erb:14: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+app/views/cars/new.html.erb:2: syntax error, unexpected ':', expecting tSTRING_DEND
+app/views/cars/new.html.erb:11: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+app/views/cars/new.html.erb:14: unterminated string meets end of file
+app/views/cars/new.html.erb:14: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+app/views/cars/new.html.erb:2: syntax error, unexpected ':', expecting tSTRING_DEND
+app/views/cars/new.html.erb:11: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+app/views/cars/new.html.erb:14: unterminated string meets end of file
+app/views/cars/new.html.erb:14: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:18 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1309)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 7216)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:19 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 961)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5933)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:20 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 954)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5927)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:20 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 954)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 5924)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:20 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 954)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5923)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:20 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 954)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5924)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:20 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 954)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5925)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:20 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 954)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5924)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:49 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1109)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 7011)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:50 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 847)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 5817)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:50 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 840)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5806)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:35:50 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 840)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5812)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:36:02 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1215)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 7114)
+
+
+Started POST "/cars" for ::1 at 2019-09-03 10:36:09 -0400
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"MwXKo/dFETgA7q0aV285FmLTP7IJ4ytO2w0wDn8NWLVIuBZ4/fybVMI1Ofjz7pxTyRLnmdBKNFS2fZvbkFQbmw==", "car"=>{"make"=>"Jeep", "model"=>"Patriot", "mileage"=>"1", "seats"=>"1"}, "commit"=>"Sell us this car!"}
+No template found for CarsController#create, rendering head :no_content
+Completed 204 No Content in 150168ms (ActiveRecord: 0.0ms | Allocations: 4193)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 10:38:42 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1022)
+Completed 200 OK in 19ms (Views: 10.4ms | ActiveRecord: 0.7ms | Allocations: 10840)
+
+
+Started POST "/cars" for ::1 at 2019-09-03 10:38:52 -0400
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"6cKoNjdIRU/sljx78xeG8hNc/w6Sb7/OyzjFm2kEmJySf3TtPfHPIy5NqJlXliO3uJ0nJUvGoNSmSG5Ohl3bsg==", "car"=>{"make"=>"Jeep", "model"=>"Cherokee", "mileage"=>"1", "seats"=>"4"}, "commit"=>"Sell us this car!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:24:in `create'
+  [1m[36mCar Create (0.7ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "mileage", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["make", "Jeep"], ["model", "Cherokee"], ["mileage", 1], ["seats", 4], ["created_at", "2019-09-03 14:38:52.636421"], ["updated_at", "2019-09-03 14:38:52.636421"]]
+  ↳ app/controllers/cars_controller.rb:24:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:24:in `create'
+Redirected to http://localhost:3000/cars/4
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms | Allocations: 2616)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:38:52 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 220)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.2ms | Allocations: 5951)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 10:39:01 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 864)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 5973)
+
+
+Started GET "/cars/1/edit" for ::1 at 2019-09-03 10:40:07 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 4ms (ActiveRecord: 0.0ms | Allocations: 1889)
+
+
+  
+ActionController::MissingExactTemplate (CarsController#edit is missing a template for request formats: text/html):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cars/new" for ::1 at 2019-09-03 10:40:50 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1275)
+Completed 200 OK in 29ms (Views: 12.6ms | ActiveRecord: 0.5ms | Allocations: 14016)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 10:41:37 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 5264)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.9ms | Allocations: 11453)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:41:39 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 222)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 5942)
+
+
+Started GET "/cars/4/edit" for ::1 at 2019-09-03 10:41:42 -0400
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:32:in `edit'
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/edit.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1329)
+Completed 200 OK in 77ms (Views: 55.6ms | ActiveRecord: 0.2ms | Allocations: 6924)
+
+
+Started GET "/cars/4/edit" for ::1 at 2019-09-03 10:42:30 -0400
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:32:in `edit'
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1411)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 7796)
+
+
+Started PATCH "/cars/4" for ::1 at 2019-09-03 10:44:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#update as HTML
+  Parameters: {"authenticity_token"=>"PIzbwhnspKsh/WydKX0Fu/1J7QsjUj+tw9Fn9dPljYVHMQcZE1Uux+Mm+H+N/KD+Vog1IPr7ILeuocwgPLzOqw==", "car"=>{"make"=>"Jeep", "model"=>"Cherokee", "mileage"=>"1", "seats"=>"5"}, "commit"=>"Update Car", "id"=>"4"}
+No template found for CarsController#update, rendering head :no_content
+Completed 204 No Content in 134463ms (ActiveRecord: 0.0ms | Allocations: 4290)
+
+
+Started GET "/cars/4/edit" for ::1 at 2019-09-03 10:46:41 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:32:in `edit'
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1199)
+Completed 200 OK in 20ms (Views: 9.9ms | ActiveRecord: 0.9ms | Allocations: 11653)
+
+
+Started PATCH "/cars/4" for ::1 at 2019-09-03 10:46:56 -0400
+Processing by CarsController#update as HTML
+  Parameters: {"authenticity_token"=>"U1l+39ydXrkl+GPLUffhpujHODbOjAKej/+Ry4f9Bloo5KIE1iTU1ecj9yn1dkTjQwbgHRclHYTijzoeaKRFdA==", "car"=>{"make"=>"Jeep", "model"=>"Cherokee", "mileage"=>"23000", "seats"=>"5"}, "commit"=>"Update Car", "id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:42:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:44:in `update'
+  [1m[36mCar Update (0.3ms)[0m  [1m[33mUPDATE "cars" SET "mileage" = ?, "seats" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["mileage", 23000], ["seats", 5], ["updated_at", "2019-09-03 14:46:56.121979"], ["id", 4]]
+  ↳ app/controllers/cars_controller.rb:44:in `update'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:44:in `update'
+Redirected to http://localhost:3000/cars/4
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms | Allocations: 3038)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:46:56 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 220)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 5818)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 10:52:13 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 5302)
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.9ms | Allocations: 10859)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:52:17 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 5646)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:54:34 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 378)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 6770)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:54:35 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 5628)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:54:35 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 166)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 5624)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:54:35 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 166)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 5614)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:54:35 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 166)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 5618)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:54:35 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 166)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 5626)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:54:59 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 351)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 6731)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:55:27 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 416)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.1ms | Allocations: 6796)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:55:45 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 420)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 6799)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:56:14 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 429)
+Completed 200 OK in 19ms (Views: 9.3ms | ActiveRecord: 0.7ms | Allocations: 11666)
+
+
+Started DELETE "/cars/4" for ::1 at 2019-09-03 10:56:15 -0400
+Processing by CarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qR5CMj3Ma3JrZIpyna3/1XKNOC0BJ1NNXI2kLiD+KvXSo57pN3XhHqm/HpA5LFqQ2UzgBtiOTFcx/Q/7z6dp2w==", "commit"=>"Update Car", "id"=>"4"}
+No template found for CarsController#destroy, rendering head :no_content
+Started GET "/cars/4" for ::1 at 2019-09-03 10:57:36 -0400
+Started GET "/cars/4" for ::1 at 2019-09-03 10:57:36 -0400
+Completed 204 No Content in 81465ms (ActiveRecord: 0.0ms | Allocations: 174540)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+Processing by CarsController#show as HTML
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Parameters: {"id"=>"4"}
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 200)
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 195)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 0.2ms | Allocations: 11863)
+
+
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.2ms | Allocations: 10685)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:57:39 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 207)
+Completed 200 OK in 22ms (Views: 10.1ms | ActiveRecord: 0.9ms | Allocations: 10682)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 10:57:51 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 427)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 6812)
+
+
+Started DELETE "/cars/4" for ::1 at 2019-09-03 10:57:52 -0400
+Processing by CarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nbxEKVsj8pEvIp5GgiKFUnj4O0Y79kYiwjTvJIbs9lvmAZjyUZp4/e35CqQmoyAX0znjbeJfWTivRETxabW1dQ==", "commit"=>"Sold!", "id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:51:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:52:in `destroy'
+  [1m[36mCar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/cars_controller.rb:52:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms | Allocations: 2505)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 10:57:52 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 826)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 5927)
+
+
+Started GET "/cars/1" for ::1 at 2019-09-03 10:57:54 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 199)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 5653)
+
+
+Started DELETE "/cars/1" for ::1 at 2019-09-03 10:57:56 -0400
+Processing by CarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Cr0qdtJGFhSMuOeMf4CN0xIuk/521+KFUFQ+McSgKHnkI0hYVBWeCqncxxAFA/GEYhMoDecK6q1k33NTdQQyfg==", "commit"=>"Sold!", "id"=>"1"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:51:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:52:in `destroy'
+  [1m[36mCar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/cars_controller.rb:52:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms | Allocations: 2514)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 10:57:56 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 621)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 5576)
+
+
+Started GET "/cars/3" for ::1 at 2019-09-03 10:57:57 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 195)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 5652)
+
+
+Started DELETE "/cars/3" for ::1 at 2019-09-03 10:57:58 -0400
+Processing by CarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VKI0OyZvBZ49EHjsKvRL/nrONPxWEreBDShz/0wzIuqQh/bEaPDvN/ma0pJnEYEBE4dYWeaqJCLiAcVUmYEqDA==", "commit"=>"Sold!", "id"=>"3"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:51:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:52:in `destroy'
+  [1m[36mCar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/cars_controller.rb:52:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms | Allocations: 2519)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 10:57:58 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 589)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5546)
+
+
+Started GET "/carsasdasda" for ::1 at 2019-09-03 11:00:20 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/carsasdasda"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cars/new" for ::1 at 2019-09-03 14:31:17 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3142)
+Completed 200 OK in 1025ms (Views: 998.4ms | ActiveRecord: 0.4ms | Allocations: 1349924)
+
+
+Started POST "/cars" for ::1 at 2019-09-03 14:31:27 -0400
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"ShvCU5hAsJljtmY05tqUiLDF4S+KVrGbKUyRrCtynjQxph6Ikvk69aFt8tZCWzHNGwQ5BFP/roFEPDp5xCvdGg==", "car"=>{"make"=>"Jeep", "model"=>"Patriot", "mileage"=>"11111111", "seats"=>"2"}, "commit"=>"Sell us this car!"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 707)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/cars_controller.rb:24:in `create'
+Started GET "/cars/new" for ::1 at 2019-09-03 14:35:41 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 26415.7ms | Allocations: 65423)
+Completed 500 Internal Server Error in 26423ms (ActiveRecord: 0.4ms | Allocations: 82326)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1
+app/views/cars/new.html.erb:3
+app/views/cars/new.html.erb:1
+Started GET "/cars/new" for ::1 at 2019-09-03 14:36:08 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 11069.2ms | Allocations: 4659677)
+Completed 500 Internal Server Error in 11475ms (ActiveRecord: 0.0ms | Allocations: 10004212)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1
+app/views/cars/new.html.erb:3
+app/views/cars/new.html.erb:1
+Started GET "/cars/new" for ::1 at 2019-09-03 14:36:28 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 144690.0ms | Allocations: 192265)
+Completed 500 Internal Server Error in 144738ms (ActiveRecord: 0.0ms | Allocations: 794508)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1
+app/views/cars/new.html.erb:3
+app/views/cars/new.html.erb:1
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCars (20190903134242)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "cars" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "make" varchar, "model" varchar, "year" integer, "mileage" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190903134242"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-03 18:39:11.070067"], ["updated_at", "2019-09-03 18:39:11.070067"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cars"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Create (1.1ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["make", "Honda"], ["model", "CRV"], ["year", 2019], ["mileage", 6000], ["created_at", "2019-09-03 18:39:30.824435"], ["updated_at", "2019-09-03 18:39:30.824435"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["make", "Subaru"], ["model", "Forester"], ["year", 2015], ["mileage", 60000], ["created_at", "2019-09-03 18:39:30.828841"], ["updated_at", "2019-09-03 18:39:30.828841"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Create (0.2ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["make", "HotWheels"], ["model", "SuperChargedCar"], ["year", 2000], ["mileage", 160000], ["created_at", "2019-09-03 18:39:30.832036"], ["updated_at", "2019-09-03 18:39:30.832036"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY "cars"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/cars" for ::1 at 2019-09-03 14:42:13 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 5636)
+Completed 200 OK in 817ms (Views: 793.3ms | ActiveRecord: 0.5ms | Allocations: 1347660)
+
+
+Started GET "/cars/1" for ::1 at 2019-09-03 14:42:20 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3837)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms | Allocations: 5349)
+
+
+  
+ActionView::Template::Error (undefined method `seats' for #<Car:0x00007fb734afdde8>):
+    2: 
+    3: <p><%= @car.model %></p>
+    4: <p>Only <%= @car.mileage %> miles!</p>
+    5: <p>Seat up to <%= @car.seats %> people!</p>
+    6: 
+    7: 
+    8: <%= form_tag "/cars/#{@car.id}", method: "delete" do %>
+  
+app/views/cars/show.html.erb:5
+Started GET "/cars" for ::1 at 2019-09-03 15:36:24 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (1.0ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 5636)
+Completed 200 OK in 1331ms (Views: 1299.9ms | ActiveRecord: 1.8ms | Allocations: 1347764)
+
+
+Started GET "/cars/1" for ::1 at 2019-09-03 15:36:30 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3837)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 5359)
+
+
+  
+ActionView::Template::Error (undefined method `seats' for #<Car:0x00007f845b3d0ce8>):
+    2: 
+    3: <p><%= @car.model %></p>
+    4: <p>Only <%= @car.mileage %> miles!</p>
+    5: <p>Seat up to <%= @car.seats %> people!</p>
+    6: 
+    7: 
+    8: <%= form_tag "/cars/#{@car.id}", method: "delete" do %>
+  
+app/views/cars/show.html.erb:5
+Started GET "/cars/1" for ::1 at 2019-09-03 15:37:25 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 449)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 6922)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 15:37:40 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 24.7ms | Allocations: 815)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.1ms | Allocations: 5948)
+
+
+Started GET "/cars/3" for ::1 at 2019-09-03 15:37:42 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 199)
+Completed 200 OK in 744ms (Views: 742.1ms | ActiveRecord: 0.2ms | Allocations: 5657)
+
+
+Started DELETE "/cars/3" for ::1 at 2019-09-03 15:37:46 -0400
+Processing by CarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VUmAxxjrXikCB3INRU2fQoig/Mw5eTnKbMwz3wqI17aRbEI4VnS0gMaN2HMIqFW94emQaYnBqmmD5YV03zrfUA==", "commit"=>"Sold!", "id"=>"3"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:52:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:53:in `destroy'
+  [1m[36mCar Destroy (0.7ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/cars_controller.rb:53:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:53:in `destroy'
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms | Allocations: 2584)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 15:37:46 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 621)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 5585)
+
+
+Started GET "/cars/1" for ::1 at 2019-09-03 15:37:48 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 195)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 5646)
+
+
+Started GET "/cars/1/edit" for ::1 at 2019-09-03 15:37:53 -0400
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:33:in `edit'
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/edit.html.erb within layouts/application (Duration: 13.4ms | Allocations: 6200)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms | Allocations: 7259)
+
+
+  
+ActionView::Template::Error (undefined method `seats' for #<Car:0x00007f845b8a0bd8>):
+     6:   <%= f.label :mileage %>
+     7:   <%= f.number_field :mileage %>
+     8:   <%= f.label :seats %>
+     9:   <%= f.number_field :seats %>
+    10:   <%= f.submit  %>
+    11: <% end %>
+  
+app/views/cars/edit.html.erb:9
+app/views/cars/edit.html.erb:1
+Started GET "/cars/1/edit" for ::1 at 2019-09-03 15:38:11 -0400
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:33:in `edit'
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1459)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 7847)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 15:42:43 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3568)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms | Allocations: 9082)
+
+
+  
+ActionView::Template::Error (undefined method `seats' for #<Car:0x00007f845b9b9ad8>):
+     6:   <%= f.label :mileage %>
+     7:   <%= f.number_field :mileage %>
+     8:   <%= f.label :seats %>
+     9:   <%= f.number_field :seats %>
+    10:   <%= f.submit "Sell us this car!" %>
+    11: <% end %>
+  
+app/views/cars/new.html.erb:9
+app/views/cars/new.html.erb:1
+Started GET "/cars/new" for ::1 at 2019-09-03 15:42:59 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1218)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 7134)
+
+
+Started POST "/cars" for ::1 at 2019-09-03 15:43:16 -0400
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"oYWWJZhSTTuP2bf8oMEoF4pURDIbclshD/XGLEe/ptbaOEr+kuvHV00CIx4EQI1SIZWcGcLbRDtihW35qObl+A==", "car"=>{"make"=>"Tesla", "model"=>"S", "mileage"=>"20000", "year"=>"2018"}, "commit"=>"Sell us this car!"}
+Completed 500 Internal Server Error in 123875ms (ActiveRecord: 0.0ms | Allocations: 76846)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/cars_controller.rb:24:in `create'
+Started GET "/cars/new" for ::1 at 2019-09-03 15:45:24 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/cars/new" for ::1 at 2019-09-03 15:45:26 -0400
+Started GET "/cars/new" for ::1 at 2019-09-03 15:45:26 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 68.8ms | Allocations: 579516)
+Completed 200 OK in 350ms (Views: 180.3ms | ActiveRecord: 18.6ms | Allocations: 2833771)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (13.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/cars/new" for ::1 at 2019-09-03 15:45:30 -0400
+Processing by CarsController#new as HTML
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 71.3ms | Allocations: 579515)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendered cars/new.html.erb within layouts/application (Duration: 54.7ms | Allocations: 515467)
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 69.4ms | Allocations: 502485)
+Completed 200 OK in 791ms (Views: 613.8ms | ActiveRecord: 6.7ms | Allocations: 6197511)
+
+
+Completed 200 OK in 431ms (Views: 409.0ms | ActiveRecord: 0.0ms | Allocations: 3254434)
+
+
+Completed 200 OK in 729ms (Views: 675.5ms | ActiveRecord: 0.0ms | Allocations: 5562828)
+
+
+Started POST "/cars" for ::1 at 2019-09-03 15:45:37 -0400
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"xV7TkAvb6tomaB6Odw1ZuL38S7hdy3rZZjnI5aGp5S2+4w9LAWJgtuSzimzTjPz9Fj2Tk4RiZcMLSWMwTvCmAw==", "car"=>{"make"=>"Tesla", "model"=>"S", "mileage"=>"20000", "year"=>"2018"}, "commit"=>"Sell us this car!"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 237493)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/cars_controller.rb:24:in `create'
+Started POST "/cars" for ::1 at 2019-09-03 15:47:40 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"xV7TkAvb6tomaB6Odw1ZuL38S7hdy3rZZjnI5aGp5S2+4w9LAWJgtuSzimzTjPz9Fj2Tk4RiZcMLSWMwTvCmAw==", "car"=>{"make"=>"Tesla", "model"=>"S", "mileage"=>"20000", "year"=>"2018"}, "commit"=>"Sell us this car!"}
+[31mUnpermitted parameters: :model, :mileage, :year[0m
+Completed 500 Internal Server Error in 97474ms (ActiveRecord: 0.0ms | Allocations: 266726)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/cars_controller.rb:26:in `create'
+Started GET "/cars" for ::1 at 2019-09-03 15:49:37 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (13.8ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 152.5ms | Allocations: 1268878)
+Completed 200 OK in 304ms (Views: 255.8ms | ActiveRecord: 20.3ms | Allocations: 2549933)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 15:49:43 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 63.0ms | Allocations: 578527)
+Completed 200 OK in 203ms (Views: 176.2ms | ActiveRecord: 0.0ms | Allocations: 1699767)
+
+
+Started POST "/cars" for ::1 at 2019-09-03 15:49:55 -0400
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"n02povzXDglHAFVNGX8h6OAgUkaDT/SUPHJqjvg8Swfk8HV59m6EZYXbwa+9/oStS+GKbVrm645RAsFbF2UIKQ==", "car"=>{"make"=>"Tesla", "model"=>"S", "mileage"=>"20000", "year"=>"2018"}, "commit"=>"Sell us this car!"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:25:in `create'
+  [1m[36mCar Create (2.5ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["make", "Tesla"], ["model", "S"], ["year", 2018], ["mileage", 20000], ["created_at", "2019-09-03 19:49:55.843032"], ["updated_at", "2019-09-03 19:49:55.843032"]]
+  ↳ app/controllers/cars_controller.rb:25:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:25:in `create'
+Redirected to http://localhost:3000/cars/4
+Completed 302 Found in 125ms (ActiveRecord: 4.4ms | Allocations: 969210)
+
+
+Started GET "/cars/4" for ::1 at 2019-09-03 15:49:55 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (2.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 39.6ms | Allocations: 246287)
+Completed 200 OK in 246ms (Views: 183.1ms | ActiveRecord: 2.4ms | Allocations: 1974989)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 15:50:43 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 67.0ms | Allocations: 567397)
+Completed 200 OK in 218ms (Views: 191.3ms | ActiveRecord: 0.0ms | Allocations: 1771186)
+
+
+Started POST "/cars" for ::1 at 2019-09-03 15:52:04 -0400
+  [1m[35m (12.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"Evm1mhsXzsk/U5qgo+kqpxsWZr5Qa4j6IxtkXVTHsZtpRGlBEa5Epf2IDkIHaI/isNe+lYnCl+BOa8+Iu57ytQ==", "car"=>{"make"=>"a", "model"=>"111", "mileage"=>"12", "year"=>"12"}, "commit"=>"Sell us this car!", "user"=>{"admin"=>"true"}}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:25:in `create'
+  [1m[36mCar Create (2.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["make", "a"], ["model", "111"], ["year", 12], ["mileage", 12], ["created_at", "2019-09-03 19:52:07.422781"], ["updated_at", "2019-09-03 19:52:07.422781"]]
+  ↳ app/controllers/cars_controller.rb:25:in `create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:25:in `create'
+Completed 500 Internal Server Error in 38535ms (ActiveRecord: 14.5ms | Allocations: 2344598)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/cars_controller.rb:30:in `create'
+Started GET "/carsasdasdasdasdasd" for ::1 at 2019-09-03 15:57:28 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDealerships (20190903195532)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "dealerships" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190903195532"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDealershipFkToCars (20190903200203)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "cars" ADD "dealership_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190903200203"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Destroy (0.6ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Create (0.5ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "CarMax"], ["created_at", "2019-09-03 20:04:52.260598"], ["updated_at", "2019-09-03 20:04:52.260598"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Create (0.5ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Honda"], ["model", "CRV"], ["year", 2019], ["mileage", 6000], ["created_at", "2019-09-03 20:04:52.301421"], ["updated_at", "2019-09-03 20:04:52.301421"], ["dealership_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Create (0.2ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Subaru"], ["model", "Forester"], ["year", 2015], ["mileage", 60000], ["created_at", "2019-09-03 20:04:52.307652"], ["updated_at", "2019-09-03 20:04:52.307652"], ["dealership_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Create (0.4ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "HotWheels"], ["model", "SuperChargedCar"], ["year", 2000], ["mileage", 160000], ["created_at", "2019-09-03 20:04:52.311960"], ["updated_at", "2019-09-03 20:04:52.311960"], ["dealership_id", 1]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" ORDER BY "dealerships"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" ORDER BY "dealerships"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCar Load (0.7ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ? LIMIT ?[0m  [["dealership_id", 1], ["LIMIT", 11]]
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY "cars"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY "cars"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/cars" for ::1 at 2019-09-03 16:09:13 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 6270)
+Completed 200 OK in 1224ms (Views: 1214.4ms | ActiveRecord: 0.6ms | Allocations: 1355728)
+
+
+Started GET "/cars/6" for ::1 at 2019-09-03 16:09:17 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 463)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 7383)
+
+
+Started DELETE "/cars/6" for ::1 at 2019-09-03 16:09:23 -0400
+Processing by CarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gDsBq1hdbqfeon/dwj29JcbbuvKVXESrNTuno1BnShwkqvLLMGwPLAmxzeLkg0z2oQHQdQj9XbUJxo1/rmrljw==", "commit"=>"Sold!", "id"=>"6"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:52:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:53:in `destroy'
+  [1m[36mCar Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/cars_controller.rb:53:in `destroy'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:53:in `destroy'
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms | Allocations: 2588)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 16:09:23 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 622)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 6437)
+
+
+Started GET "/cars/8" for ::1 at 2019-09-03 16:09:25 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 196)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 6518)
+
+
+Started GET "/cars/8/edit" for ::1 at 2019-09-03 16:09:28 -0400
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:33:in `edit'
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/edit.html.erb within layouts/application (Duration: 12.9ms | Allocations: 3127)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.1ms | Allocations: 9563)
+
+
+Started PATCH "/cars/8" for ::1 at 2019-09-03 16:09:36 -0400
+Processing by CarsController#update as HTML
+  Parameters: {"authenticity_token"=>"MQa9krJwdPfaT6DB/8VBehu3ApOgRX2WS5KApP2/Ym5Ku2FJuMn+mxiUNCNbROQ/sHbauHnsYowm4itxEuYhQA==", "car"=>{"make"=>"HotWheels", "model"=>"SuperChargedCar", "mileage"=>"10", "year"=>"2000"}, "commit"=>"Update Car", "id"=>"8"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:43:in `update'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 1318)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'seats' for Car.):
+  
+app/controllers/cars_controller.rb:45:in `update'
+Started GET "/cars/new" for ::1 at 2019-09-03 16:13:35 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1306)
+Completed 200 OK in 19ms (Views: 9.7ms | ActiveRecord: 0.5ms | Allocations: 13052)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 16:19:58 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1215)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 7968)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 16:20:00 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 960)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 6776)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 16:20:01 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 953)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 6769)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 16:20:16 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/new.html.erb:11
+  Rendered cars/new.html.erb within layouts/application (Duration: 19.7ms | Allocations: 8087)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.6ms | Allocations: 14755)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 16:22:19 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/new.html.erb:11
+  Rendered cars/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1927)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.1ms | Allocations: 8672)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 16:22:19 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/new.html.erb:11
+  Rendered cars/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1654)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 7473)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 16:22:45 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 3463)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 4646)
+
+
+  
+ActionView::Template::Error (undefined method `somethingthatisntaproperty' for #<Car:0x00007fdf64b69ef0>):
+    4:   <%= f.label :model %>
+    5:   <%= f.text_field :model %>
+    6:   <%= f.label :mileage %>
+    7:   <%= f.number_field :somethingthatisntaproperty %>
+    8:   <%= f.label :year %>
+    9:   <%= f.number_field :year %>
+   10: 
+  
+app/views/cars/new.html.erb:7
+app/views/cars/new.html.erb:1
+Started GET "/cars/new" for ::1 at 2019-09-03 16:24:14 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 13.3ms | Allocations: 3069)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 3508)
+
+
+  
+ActionView::Template::Error (undefined method `somethingthatisntaproperty' for #<Car:0x00007fdf668b1d00>):
+    4:   <%= f.label :model %>
+    5:   <%= f.text_field :model %>
+    6:   <%= f.label :mileage %>
+    7:   <%= f.number_field :somethingthatisntaproperty %>
+    8:   <%= f.label :year %>
+    9:   <%= f.number_field :year %>
+   10: 
+  
+app/views/cars/new.html.erb:7
+app/views/cars/new.html.erb:1
+Started GET "/cars/new" for ::1 at 2019-09-03 16:24:27 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/new.html.erb:11
+  Rendered cars/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1926)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.1ms | Allocations: 8683)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 16:24:59 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/new.html.erb:11
+  Rendered cars/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1928)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.1ms | Allocations: 8669)
+
+
+Started POST "/cars" for ::1 at 2019-09-03 16:26:28 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"GcnPSv26OA6M5nPAB5xNVCwcXoGModdNihW6Fz0oqyFidBOR9wOyYk495yKjHegRh92GqlUIyFfnZRHC0nHoDw==", "car"=>{"make"=>"Dodge", "model"=>"Challenger", "mileage"=>"5000", "year"=>"1"}, "commit"=>"Sell us this car!"}
+Started GET "/cars/new" for ::1 at 2019-09-03 16:28:49 -0400
+Started GET "/cars/new" for ::1 at 2019-09-03 16:28:49 -0400
+Completed 500 Internal Server Error in 140691ms (ActiveRecord: 0.6ms | Allocations: 153795)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"cars", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/cars_controller.rb:29:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/cars/new" for ::1 at 2019-09-03 16:28:49 -0400
+Processing by CarsController#new as HTML
+Processing by CarsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering cars/new.html.erb within layouts/application
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/new.html.erb:11
+  ↳ app/views/cars/new.html.erb:11
+  Rendered cars/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 6219)
+  ↳ app/views/cars/new.html.erb:11
+  Rendered cars/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 9035)
+  Rendered cars/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4733)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.6ms | Allocations: 24720)
+
+
+Completed 200 OK in 68ms (Views: 58.5ms | ActiveRecord: 0.7ms | Allocations: 33553)
+
+
+Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.2ms | Allocations: 28897)
+
+
+Started POST "/cars" for ::1 at 2019-09-03 16:29:03 -0400
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"ltXrP0chQdaKtoXN0aMkTPdJUSUXWwHwX6QVrFjbTV3taDfkTZjLukhtES91IoEJXIiJDs7yHuoy1L55t4IOcw==", "car"=>{"make"=>"Dodge", "model"=>"Challenger", "mileage"=>"6000", "year"=>"2012", "dealership_id"=>"1"}, "commit"=>"Sell us this car!"}
+Completed 500 Internal Server Error in 36951ms (ActiveRecord: 0.0ms | Allocations: 10909)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/cars_controller.rb:24:in `create'
+Started GET "/cars/new" for ::1 at 2019-09-03 16:29:43 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/cars/new" for ::1 at 2019-09-03 16:29:46 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mDealership Load (1.8ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/new.html.erb:11
+  Rendered cars/new.html.erb within layouts/application (Duration: 177.9ms | Allocations: 1482164)
+Completed 200 OK in 488ms (Views: 321.6ms | ActiveRecord: 14.9ms | Allocations: 3922465)
+
+
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mDealership Load (15.5ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/new.html.erb:11
+  Rendered cars/new.html.erb within layouts/application (Duration: 189.6ms | Allocations: 1497793)
+Completed 200 OK in 533ms (Views: 312.4ms | ActiveRecord: 55.0ms | Allocations: 3963599)
+
+
+Started GET "/cars" for ::1 at 2019-09-03 16:29:51 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (1.7ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 41.8ms | Allocations: 234357)
+Completed 200 OK in 223ms (Views: 185.5ms | ActiveRecord: 1.7ms | Allocations: 1574946)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-03 16:29:54 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mDealership Load (1.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/new.html.erb:11
+  Rendered cars/new.html.erb within layouts/application (Duration: 83.7ms | Allocations: 735212)
+Completed 200 OK in 241ms (Views: 227.1ms | ActiveRecord: 1.3ms | Allocations: 2057077)
+
+
+Started POST "/cars" for ::1 at 2019-09-03 16:30:02 -0400
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"vqnm5XSaM/LQan0uqD5qJG4oKxP1CBRZulbQ7HlgwgHFFDo+fiO5nhKx6cwMv89hxenzOCyhC0PXJns5ljmBLw==", "car"=>{"make"=>"Dodge", "model"=>"Challenger", "mileage"=>"6000", "year"=>"2012", "dealership_id"=>"1"}, "commit"=>"Sell us this car!"}
+  [1m[35m (1.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:25:in `create'
+  [1m[36mDealership Load (1.5ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:25:in `create'
+  [1m[36mCar Create (1.5ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Dodge"], ["model", "Challenger"], ["year", 2012], ["mileage", 6000], ["created_at", "2019-09-03 20:30:02.865570"], ["updated_at", "2019-09-03 20:30:02.865570"], ["dealership_id", 1]]
+  ↳ app/controllers/cars_controller.rb:25:in `create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:25:in `create'
+Redirected to http://localhost:3000/cars/9
+Completed 302 Found in 190ms (ActiveRecord: 5.9ms | Allocations: 1502914)
+
+
+Started GET "/cars/9" for ::1 at 2019-09-03 16:30:02 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mCar Load (1.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 28.1ms | Allocations: 217960)
+Completed 200 OK in 295ms (Views: 226.4ms | ActiveRecord: 1.5ms | Allocations: 2366334)
+
+
+Started GET "/cars/9/edit" for ::1 at 2019-09-03 16:33:56 -0400
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mCar Load (1.6ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:32:in `edit'
+  Rendering cars/edit.html.erb within layouts/application
+  [1m[36mDealership Load (11.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/edit.html.erb:11
+  Rendered cars/edit.html.erb within layouts/application (Duration: 218.0ms | Allocations: 2055452)
+Completed 200 OK in 622ms (Views: 371.2ms | ActiveRecord: 36.9ms | Allocations: 5745144)
+
+
+Started GET "/cars/9/edit" for ::1 at 2019-09-03 16:34:35 -0400
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mCar Load (1.8ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:32:in `edit'
+  Rendering cars/edit.html.erb within layouts/application
+  [1m[36mDealership Load (1.7ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/edit.html.erb:11
+  Rendered cars/edit.html.erb within layouts/application (Duration: 100.4ms | Allocations: 979926)
+Completed 200 OK in 339ms (Views: 284.6ms | ActiveRecord: 3.5ms | Allocations: 2966894)
+
+
+Started PATCH "/cars/9" for ::1 at 2019-09-03 16:34:42 -0400
+Processing by CarsController#update as HTML
+  Parameters: {"authenticity_token"=>"Qtf/Z5aID93M3QW8Fnkvydj28CnuiJ+wy2OURx7/t7M5aiO8nDGFsQ4GkV6y+IqMczcoAjchgKqmEz+S8ab0nQ==", "car"=>{"make"=>"Dodge", "model"=>"Challenger", "mileage"=>"6000", "year"=>"2013", "dealership_id"=>"1"}, "commit"=>"Update this car!", "id"=>"9"}
+  [1m[36mCar Load (12.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:42:in `update'
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:44:in `update'
+  [1m[36mDealership Load (1.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:44:in `update'
+  [1m[36mCar Update (2.0ms)[0m  [1m[33mUPDATE "cars" SET "year" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["year", 2013], ["updated_at", "2019-09-03 20:34:42.696551"], ["id", 9]]
+  ↳ app/controllers/cars_controller.rb:44:in `update'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:44:in `update'
+Redirected to http://localhost:3000/cars/9
+Completed 302 Found in 211ms (ActiveRecord: 19.0ms | Allocations: 1919724)
+
+
+Started GET "/cars/9" for ::1 at 2019-09-03 16:34:42 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mCar Load (1.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 23.1ms | Allocations: 182492)
+Completed 200 OK in 281ms (Views: 242.0ms | ActiveRecord: 1.2ms | Allocations: 2614975)
+
+
+Started GET "/cars/9" for ::1 at 2019-09-03 16:35:22 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mCar Load (1.6ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 22.0ms | Allocations: 147621)
+Completed 200 OK in 402ms (Views: 182.5ms | ActiveRecord: 9.2ms | Allocations: 3677464)
+
+
+Started GET "/cars/9/edit" for ::1 at 2019-09-03 16:35:26 -0400
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mCar Load (1.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:32:in `edit'
+  Rendering cars/edit.html.erb within layouts/application
+  [1m[36mDealership Load (1.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/edit.html.erb:11
+  Rendered cars/edit.html.erb within layouts/application (Duration: 209.8ms | Allocations: 2005039)
+Completed 200 OK in 408ms (Views: 348.2ms | ActiveRecord: 11.3ms | Allocations: 3785878)
+
+
+Started PATCH "/cars/9" for ::1 at 2019-09-03 16:35:30 -0400
+Processing by CarsController#update as HTML
+  Parameters: {"authenticity_token"=>"uAjMwnWwdj+TTo8ZJBlEW0fat+000iRHQDmDwVYEDErDtRAZfwn8U1GVG/uAmOEe7Btvxu17O10tSSgUuV1PZA==", "car"=>{"make"=>"Dodge", "model"=>"Challenger", "mileage"=>"6000", "year"=>"2014", "dealership_id"=>"1"}, "commit"=>"Update this car!", "id"=>"9"}
+  [1m[36mCar Load (1.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:38:in `update'
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:40:in `update'
+  [1m[36mDealership Load (1.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:40:in `update'
+  [1m[36mCar Update (14.1ms)[0m  [1m[33mUPDATE "cars" SET "year" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["year", 2014], ["updated_at", "2019-09-03 20:35:30.563119"], ["id", 9]]
+  ↳ app/controllers/cars_controller.rb:40:in `update'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:40:in `update'
+Redirected to http://localhost:3000/cars/9
+Completed 302 Found in 219ms (ActiveRecord: 19.0ms | Allocations: 1992856)
+
+
+Started GET "/cars/9" for ::1 at 2019-09-03 16:35:30 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mCar Load (1.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 10.7ms | Allocations: 147609)
+Completed 200 OK in 272ms (Views: 209.2ms | ActiveRecord: 1.1ms | Allocations: 2541341)
+
+
+Started GET "/dealerships" for ::1 at 2019-09-03 16:37:04 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for DealershipsController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dealerships" for ::1 at 2019-09-03 16:37:49 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/dealerships"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dealerships" for ::1 at 2019-09-03 16:38:21 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for DealershipsController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dealerships" for ::1 at 2019-09-03 16:39:26 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#index as HTML
+Completed 406 Not Acceptable in 89ms (ActiveRecord: 0.0ms | Allocations: 831194)
+
+
+  
+ActionController::MissingExactTemplate (DealershipsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dealerships" for ::1 at 2019-09-03 16:41:00 -0400
+Processing by DealershipsController#index as HTML
+  Rendering dealerships/index.html.erb within layouts/application
+  [1m[36mDealership Load (1.7ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/dealerships/index.html.erb:4
+  Rendered dealerships/index.html.erb within layouts/application (Duration: 113.1ms | Allocations: 1069446)
+Completed 200 OK in 304ms (Views: 270.2ms | ActiveRecord: 10.0ms | Allocations: 2870462)
+
+
+Started GET "/dealerships" for ::1 at 2019-09-03 16:41:50 -0400
+Processing by DealershipsController#index as HTML
+  Rendering dealerships/index.html.erb within layouts/application
+  [1m[36mDealership Load (1.0ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/dealerships/index.html.erb:4
+  Rendered dealerships/index.html.erb within layouts/application (Duration: 3420.6ms | Allocations: 31953428)
+Completed 500 Internal Server Error in 3479ms (ActiveRecord: 1.0ms | Allocations: 32448745)
+
+
+  
+ActionView::Template::Error (undefined method `dealership_path' for #<#<Class:0x00007fdf662c1df0>:0x00007fdf649e0e80>
+Did you mean?  dealerships_path):
+    2: 
+    3: 
+    4: <% @dealerships.each do |ds| %>
+    5:   <p><%= link_to( ds.name , dealership_path(ds) ) %></p>
+    6: <% end %>
+  
+app/views/dealerships/index.html.erb:5
+app/views/dealerships/index.html.erb:4
+Started GET "/dealerships" for ::1 at 2019-09-03 16:43:29 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#index as HTML
+  Rendering dealerships/index.html.erb within layouts/application
+  [1m[36mDealership Load (1.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/dealerships/index.html.erb:4
+  Rendered dealerships/index.html.erb within layouts/application (Duration: 97.5ms | Allocations: 1076368)
+Completed 200 OK in 305ms (Views: 245.5ms | ActiveRecord: 7.9ms | Allocations: 3063507)
+
+
+Started GET "/dealerships/1" for ::1 at 2019-09-03 16:43:38 -0400
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for DealershipsController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Create (0.5ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Pohanka"], ["created_at", "2019-09-03 20:44:24.836416"], ["updated_at", "2019-09-03 20:44:24.836416"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/dealerships" for ::1 at 2019-09-03 16:44:42 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DealershipsController#index as HTML
+  Rendering dealerships/index.html.erb within layouts/application
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/dealerships/index.html.erb:4
+  Rendered dealerships/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3949)
+Completed 200 OK in 1261ms (Views: 1232.1ms | ActiveRecord: 0.9ms | Allocations: 1348347)
+
+
+Started GET "/dealerships/1" for ::1 at 2019-09-03 16:44:46 -0400
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for DealershipsController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dealerships/1" for ::1 at 2019-09-03 16:45:43 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+Completed 406 Not Acceptable in 13ms (ActiveRecord: 0.9ms | Allocations: 6432)
+
+
+  
+ActionController::MissingExactTemplate (DealershipsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dealerships/1" for ::1 at 2019-09-03 16:46:30 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 107)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.1ms | Allocations: 7383)
+
+
+Started GET "/dealerships/1" for ::1 at 2019-09-03 16:46:38 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+Completed 200 OK in 541ms (Views: 539.3ms | ActiveRecord: 0.1ms | Allocations: 7341)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY "cars"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY "cars"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" ORDER BY "dealerships"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" ORDER BY "dealerships"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ? LIMIT ?[0m  [["dealership_id", 1], ["LIMIT", 11]]
+Started GET "/dealerships/1" for ::1 at 2019-09-03 16:50:53 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 1]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 24.5ms | Allocations: 10181)
+Completed 200 OK in 1159ms (Views: 1142.2ms | ActiveRecord: 1.6ms | Allocations: 1358187)
+
+
+Started GET "/cars/7" for ::1 at 2019-09-03 16:50:58 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 456)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 7470)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-03 16:52:03 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for DealershipsController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dealerships/new" for ::1 at 2019-09-03 16:53:30 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 36417.4ms | Allocations: 103881)
+Completed 200 OK in 36435ms (Views: 36427.5ms | ActiveRecord: 0.6ms | Allocations: 114196)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-03 16:54:58 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 15.4ms | Allocations: 4519)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 11194)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-03 16:55:37 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for DealershipsController):
+  
+actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dealerships/new" for ::1 at 2019-09-03 16:56:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 576)
+Completed 200 OK in 82ms (Views: 71.7ms | ActiveRecord: 0.9ms | Allocations: 9966)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-03 16:56:14 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"6WoD35fAfufKpZvwsrpGB8WPq/z+JDK1EANRENm2ypGS198EnXn0iwh+DxIWO+NCbk5z1yeNLa99c/rFNu+Jvw==", "dealership"=>{"name"=>"Ourisman"}, "commit"=>"Create Dealership"}
+Completed 500 Internal Server Error in 132950ms (ActiveRecord: 0.0ms | Allocations: 63549)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/dealerships_controller.rb:18:in `create'
+Started GET "/dealerships/new" for ::1 at 2019-09-03 16:58:36 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 46.7ms | Allocations: 279597)
+Completed 200 OK in 267ms (Views: 157.1ms | ActiveRecord: 7.5ms | Allocations: 2230774)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-03 16:58:42 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"6xW9uAjmDNXJMnKiXwpjEXGp0rDv84nM7KuwOBEWbFWQqGFjAl+GuQvp5kD7i8ZU2mgKmzZaltaB2xvt/k8vew==", "dealership"=>{"name"=>"Ourisman"}, "commit"=>"Create Dealership"}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:16:in `create'
+  [1m[36mDealership Create (1.4ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ourisman"], ["created_at", "2019-09-03 20:58:42.141025"], ["updated_at", "2019-09-03 20:58:42.141025"]]
+  ↳ app/controllers/dealerships_controller.rb:16:in `create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:16:in `create'
+Redirected to http://localhost:3000/dealerships/3
+Completed 302 Found in 96ms (ActiveRecord: 3.8ms | Allocations: 835153)
+
+
+Started GET "/dealerships/3" for ::1 at 2019-09-03 16:58:42 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDealership Load (2.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (12.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 3]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 101.9ms | Allocations: 941825)
+Completed 200 OK in 331ms (Views: 253.4ms | ActiveRecord: 17.3ms | Allocations: 2822678)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-03 17:00:37 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"6xW9uAjmDNXJMnKiXwpjEXGp0rDv84nM7KuwOBEWbFWQqGFjAl+GuQvp5kD7i8ZU2mgKmzZaltaB2xvt/k8vew==", "dealership"=>{"name"=>"Ourisman Honda"}, "commit"=>"Create Dealership"}
+  [1m[35m (14.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:16:in `create'
+  [1m[36mDealership Create (1.5ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ourisman Honda"], ["created_at", "2019-09-03 21:00:39.096299"], ["updated_at", "2019-09-03 21:00:39.096299"]]
+  ↳ app/controllers/dealerships_controller.rb:16:in `create'
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:16:in `create'
+Completed 500 Internal Server Error in 2199850ms (ActiveRecord: 32.3ms | Allocations: 2147496)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/dealerships_controller.rb:18:in `create'

@@ -1,0 +1,9 @@
+<h1>Welcome to <%= @dealership.name %> </h1>
+
+<h3>Cars available</h3>
+
+<ul>
+  <% @dealership.cars.each do |car| %>
+    <li><%= link_to car.print_banner , car_path(car)%> </li>
+  <% end %>
+</ul>
