@@ -1,0 +1,12 @@
+<h1>Test Drive this <%= @car.make %>?</h1>
+
+<p><%= @car.model %></p>
+<p>Only <%= @car.mileage %> miles!</p>
+<p>Seat up to <%= @car.seats %> people!</p>
+
+
+<%= form_tag "/cars/#{@car.id}", method: "delete" do %>
+  <%= submit_tag "Sold!" %>
+<% end %>
+
+<%= link_to "Back to Showroom", cars_path %>

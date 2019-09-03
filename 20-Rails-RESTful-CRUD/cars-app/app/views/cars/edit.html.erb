@@ -1,0 +1,11 @@
+<%= form_for(@car) do |f| %>
+  <%= f.label(:make) %>
+  <%= f.text_field :make %>
+  <%= f.label :model %>
+  <%= f.text_field :model %>
+  <%= f.label :mileage %>
+  <%= f.number_field :mileage %>
+  <%= f.label :seats %>
+  <%= f.number_field :seats %>
+  <%= f.submit  %>
+<% end %>
