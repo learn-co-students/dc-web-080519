@@ -16,11 +16,10 @@ class CarsController < ApplicationController
   end
 
   def create
-    make = params[:car][:make]
-    model = params[:car][:model]
-    mileage = params[:car][:mileage]
-    year = params[:car][:year]
-    # byebug
+    # make = params[:car][:make]
+    # model = params[:car][:model]
+    # mileage = params[:car][:mileage]
+    # year = params[:car][:year]
     car = Car.create(car_params)
     # car = Car.create(make: make, model: model, mileage: mileage, year: year)
     # In sinatra redirect()
@@ -46,7 +45,6 @@ class CarsController < ApplicationController
   def destroy
     car = Car.find(params[:id])
     car.destroy
-
     redirect_to cars_path
   end
 
