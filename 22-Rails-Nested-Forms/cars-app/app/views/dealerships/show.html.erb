@@ -4,6 +4,6 @@
 
 <ul>
   <% @dealership.cars.each do |car| %>
-    <li><%= link_to car.print_banner , car_path(car)%> </li>
+    <li><%= link_to car.print_banner , dealership_car_path(@dealership, car)%> </li>
   <% end %>
 </ul>

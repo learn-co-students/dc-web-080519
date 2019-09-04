@@ -1,7 +1,12 @@
 class CarsController < ApplicationController
 
   def index
-    @cars = Car.all
+    if params[:dealership_id]
+      dealership = Dealership.find(params[:dealership_id])
+      @cars = dealership.cars
+    else
+      @cars = Car.all
+    end
     # in Sinatra erb()
     # in Rails render()
     # no need to use render if following RESTful CRUD conventions

@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # get "/cars", to: 'cars#index', as: "cars"
   # cars_path() // cars_url
   # get "/showroom", to: 'cars#index', as: "showroom"
-  resources(:cars)
-  resources :dealerships, only: [:index, :show, :new, :create]
+  resources :cars
+  resources :dealerships do 
+    resources :cars, {only: [:index, :show]}
+  end
 end

@@ -1,10 +1,24 @@
 <h1>Add A Dealership </h1>
 
 
-<%= form_for(@dealership) do |f| %>
+<%= form_for(@dealership) do |d| %>
 
-  <%= f.label :name  %>
-  <%= f.text_field :name  %>
-  <%= f.submit %>
+  <%= d.label :name  %>
+  <%= d.text_field :name  %>
+  
+  <h2>Cars</h2>
+    <%= d.fields_for :cars do |car_form| %>
+        <div>
+            <%= car_form.label(:make) %>
+            <%= car_form.text_field :make %>
+            <%= car_form.label :model %>
+            <%= car_form.text_field :model %>
+            <%= car_form.label :mileage %>
+            <%= car_form.number_field :mileage %>
+            <%= car_form.label :year %>
+            <%= car_form.number_field :year %>
+        </div>
+    <% end %>
+  <%= d.submit %>
 
 <% end %>

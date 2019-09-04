@@ -3150,3 +3150,1445 @@ SystemExit (exit):
 (byebug):1:in `exit'
 (byebug):1:in `create'
 app/controllers/dealerships_controller.rb:18:in `create'
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Destroy (0.3ms)[0m  [1m[31mDELETE FROM "dealerships" WHERE "dealerships"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Destroy (0.3ms)[0m  [1m[31mDELETE FROM "dealerships" WHERE "dealerships"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Destroy (0.3ms)[0m  [1m[31mDELETE FROM "dealerships" WHERE "dealerships"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Destroy (0.3ms)[0m  [1m[31mDELETE FROM "dealerships" WHERE "dealerships"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Create (0.4ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "CarMax"], ["created_at", "2019-09-04 13:59:31.218193"], ["updated_at", "2019-09-04 13:59:31.218193"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Honda"], ["model", "CRV"], ["year", 2019], ["mileage", 6000], ["created_at", "2019-09-04 13:59:31.233771"], ["updated_at", "2019-09-04 13:59:31.233771"], ["dealership_id", 5]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCar Create (0.4ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Subaru"], ["model", "Forester"], ["year", 2015], ["mileage", 60000], ["created_at", "2019-09-04 13:59:31.238022"], ["updated_at", "2019-09-04 13:59:31.238022"], ["dealership_id", 5]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "HotWheels"], ["model", "SuperChargedCar"], ["year", 2000], ["mileage", 160000], ["created_at", "2019-09-04 13:59:31.243330"], ["updated_at", "2019-09-04 13:59:31.243330"], ["dealership_id", 5]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 10]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 11]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 12]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDealership Load (0.7ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Destroy (0.5ms)[0m  [1m[31mDELETE FROM "dealerships" WHERE "dealerships"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Create (0.7ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "CarMax"], ["created_at", "2019-09-04 14:37:31.990689"], ["updated_at", "2019-09-04 14:37:31.990689"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Honda"], ["model", "CRV"], ["year", 2019], ["mileage", 6000], ["created_at", "2019-09-04 14:37:32.023823"], ["updated_at", "2019-09-04 14:37:32.023823"], ["dealership_id", 6]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Subaru"], ["model", "Forester"], ["year", 2015], ["mileage", 60000], ["created_at", "2019-09-04 14:37:32.029670"], ["updated_at", "2019-09-04 14:37:32.029670"], ["dealership_id", 6]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCar Create (0.4ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "HotWheels"], ["model", "SuperChargedCar"], ["year", 2000], ["mileage", 160000], ["created_at", "2019-09-04 14:37:32.035757"], ["updated_at", "2019-09-04 14:37:32.035757"], ["dealership_id", 6]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2019-09-04 10:37:41 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/paul.nicholsen/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/paul.nicholsen/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 32.4ms | Allocations: 481)
+Completed 200 OK in 69ms (Views: 46.9ms | ActiveRecord: 0.0ms | Allocations: 2779)
+
+
+Started GET "/cars" for ::1 at 2019-09-04 10:37:43 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 48.3ms | Allocations: 6983)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/paul.nicholsen/Development/code/flatiron/batches/dc-web-080519/22-Rails-Nested-Forms/cars-app/public/packs
+Completed 200 OK in 5436ms (Views: 5425.2ms | ActiveRecord: 1.8ms | Allocations: 1361641)
+
+
+Started GET "/cars/15" for ::1 at 2019-09-04 10:38:53 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCar Load (0.8ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 454)
+Completed 200 OK in 36ms (Views: 17.6ms | ActiveRecord: 0.8ms | Allocations: 9423)
+
+
+Started GET "/cars/13" for ::1 at 2019-09-04 10:41:13 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 196)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.3ms | Allocations: 6665)
+
+
+Started DELETE "/cars/13" for ::1 at 2019-09-04 10:41:17 -0400
+Processing by CarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CRa+yLFD0KS4vr8gkBLg0XXK/kDF957xpNp7HhQ0UAgiNMDtbopCVCJ/v0zDEioahh8XI3fpC8xf9hmLfoglCw==", "commit"=>"Sold!", "id"=>"13"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:46:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:47:in `destroy'
+  [1m[36mCar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/cars_controller.rb:47:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:47:in `destroy'
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms | Allocations: 2598)
+
+
+Started GET "/cars" for ::1 at 2019-09-04 10:41:17 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (1.7ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 666)
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 1.7ms | Allocations: 6623)
+
+
+Started GET "/cars/new" for ::1 at 2019-09-04 10:41:21 -0400
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/cars/new.html.erb:11
+  Rendered cars/new.html.erb within layouts/application (Duration: 38.8ms | Allocations: 9850)
+Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 1.1ms | Allocations: 15979)
+
+
+Started POST "/cars" for ::1 at 2019-09-04 10:41:46 -0400
+Processing by CarsController#create as HTML
+  Parameters: {"authenticity_token"=>"yQdjJXx6S9mTWQbky0rid6rNyZJtnEOF8XZApHmx2giXYVsi7VDGTwL5fCKfB611iJTDqeY1SspwNsUqQxGsHA==", "car"=>{"make"=>"Toyota", "model"=>"Camry", "mileage"=>"80000", "year"=>"1989", "dealership_id"=>"6"}, "commit"=>"Sell us this car!"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:23:in `create'
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:23:in `create'
+  [1m[36mCar Create (0.5ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Toyota"], ["model", "Camry"], ["year", 1989], ["mileage", 80000], ["created_at", "2019-09-04 14:41:46.519676"], ["updated_at", "2019-09-04 14:41:46.519676"], ["dealership_id", 6]]
+  ↳ app/controllers/cars_controller.rb:23:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:23:in `create'
+Redirected to http://localhost:3000/cars/16
+Completed 302 Found in 17ms (ActiveRecord: 1.5ms | Allocations: 5647)
+
+
+Started GET "/cars/16" for ::1 at 2019-09-04 10:41:46 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 195)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 6649)
+
+
+Started GET "/cars" for ::1 at 2019-09-04 10:41:49 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 709)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.3ms | Allocations: 6669)
+
+
+Started GET "/dealerships" for ::1 at 2019-09-04 10:41:54 -0400
+Processing by DealershipsController#index as HTML
+  Rendering dealerships/index.html.erb within layouts/application
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/dealerships/index.html.erb:4
+  Rendered dealerships/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 760)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.2ms | Allocations: 7255)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:41:58 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 809)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 6921)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 10:42:07 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"yyJIO+xJoGcr8iIecb4ykAQTzQVTWyZVVXgz/R9hmPOVRHA8fWMt8bpSWNgl832SJkrHPtjyLxrUOLZzJcHu5w==", "dealership"=>{"name"=>"Bob's Discount Cars"}, "commit"=>"Create Dealership"}
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms | Allocations: 49531)
+
+
+  
+NoMethodError (private method `dealership_params' called for #<DealershipsController:0x00007fa7fc331db8>
+Did you mean?  dealership_path
+               dealership_url
+               dealerships_path):
+  
+app/controllers/dealerships_controller.rb:16:in `create'
+Started POST "/dealerships" for ::1 at 2019-09-04 10:44:08 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"yyJIO+xJoGcr8iIecb4ykAQTzQVTWyZVVXgz/R9hmPOVRHA8fWMt8bpSWNgl832SJkrHPtjyLxrUOLZzJcHu5w==", "dealership"=>{"name"=>"Bob's Discount Cars"}, "commit"=>"Create Dealership"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:16:in `create'
+  [1m[36mDealership Create (0.5ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bob's Discount Cars"], ["created_at", "2019-09-04 14:44:09.054147"], ["updated_at", "2019-09-04 14:44:09.054147"]]
+  ↳ app/controllers/dealerships_controller.rb:16:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:16:in `create'
+Redirected to http://localhost:3000/dealerships/7
+Completed 302 Found in 15ms (ActiveRecord: 2.3ms | Allocations: 6133)
+
+
+Started GET "/dealerships/7" for ::1 at 2019-09-04 10:44:09 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 7]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 17.3ms | Allocations: 4408)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.8ms | Allocations: 11234)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:49:56 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1171)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 5568)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Add A Dealership </h1>
+
+
+<%= form_for(@dealership) do |d| %>
+
+  <%= d.label :name  %>
+  <%= d.text_field :name  %>
+  
+  <h2>Cars</h2>
+    <%= d.fields_for :cars do |car_form| %>
+        <%= car_form.label(:make) %>
+        <%= car_form.text_field :make %>
+        <%= car_form.label :model %>
+        <%= car_form.text_field :model %>
+        <%= car_form.label :mileage %>
+        <%= car_form.number_field :mileage %>
+        <%= car_form.label :year %>
+        <%= car_form.number_field :year %>
+  <%= d.submit %>
+
+<% end %>
+
+):
+1:    <h1>Add A Dealership </h1>
+2:    
+3:    
+4:    <%= form_for(@dealership) do |d| %>
+5:    
+6:      <%= d.label :name  %>
+7:      <%= d.text_field :name  %>
+8:      
+9:      <h2>Cars</h2>
+10:        <%= d.fields_for :cars do |car_form| %>
+11:            <%= car_form.label(:make) %>
+12:            <%= car_form.text_field :make %>
+13:            <%= car_form.label :model %>
+14:            <%= car_form.text_field :model %>
+15:            <%= car_form.label :mileage %>
+16:            <%= car_form.number_field :mileage %>
+17:            <%= car_form.label :year %>
+18:            <%= car_form.number_field :year %>
+19:      <%= d.submit %>
+20:    
+21:    <% end %>
+  
+app/views/dealerships/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/dealerships/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/dealerships/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/dealerships/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/dealerships/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+app/views/dealerships/new.html.erb:23: syntax error, unexpected end-of-input, expecting end
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:50:08 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2112)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 1.1ms | Allocations: 8923)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:51:44 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1508)
+Completed 200 OK in 32ms (Views: 14.1ms | ActiveRecord: 1.3ms | Allocations: 17490)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:52:11 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1602)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 8674)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:52:43 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1604)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 8672)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:52:54 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3375)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 4743)
+
+
+  
+ActionView::Template::Error (undefined method `super_make' for #<Car:0x00007fa7fc4692a8>):
+     9:   <h2>Cars</h2>
+    10:     <%= d.fields_for :cars do |car_form| %>
+    11:         <%= car_form.label(:super_duper_make, "Super Duper Make") %>
+    12:         <%= car_form.text_field :super_make %>
+    13:         <%= car_form.label :model %>
+    14:         <%= car_form.text_field :model %>
+    15:         <%= car_form.label :mileage %>
+  
+app/views/dealerships/new.html.erb:12
+app/views/dealerships/new.html.erb:10
+app/views/dealerships/new.html.erb:4
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:53:58 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1545)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 8621)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:55:23 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1716)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 8781)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 10:56:08 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"U52njthlFZmWLB5cUNzGwSYSi90Z80WD1uB0WgccdEkN+5+JSU+YDweMZJoEkYnDBEuB5pJaTMxXoPHUPbwCXQ==", "dealership"=>{"name"=>"Saul's Super Cars", "cars_attributes"=>{"0"=>{"make"=>"Honda", "model"=>"Accord", "mileage"=>"27", "year"=>"2020"}}}, "commit"=>"Create Dealership"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.8ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Saul's Super Cars"], ["created_at", "2019-09-04 14:56:08.777860"], ["updated_at", "2019-09-04 14:56:08.777860"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mCar Create (0.2ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Honda"], ["model", "Accord"], ["year", 2020], ["mileage", 27], ["created_at", "2019-09-04 14:56:08.782009"], ["updated_at", "2019-09-04 14:56:08.782009"], ["dealership_id", 8]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/8
+Completed 302 Found in 10ms (ActiveRecord: 2.3ms | Allocations: 4226)
+
+
+Started GET "/dealerships/8" for ::1 at 2019-09-04 10:56:08 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 8]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1073)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.5ms | Allocations: 7796)
+
+
+Started GET "/cars/17" for ::1 at 2019-09-04 10:56:16 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 419)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.3ms | Allocations: 7526)
+
+
+Started GET "/cars/17" for ::1 at 2019-09-04 10:58:21 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 423)
+Completed 200 OK in 24ms (Views: 11.6ms | ActiveRecord: 1.3ms | Allocations: 13486)
+
+
+Started GET "/dealerships/8" for ::1 at 2019-09-04 10:58:23 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 8]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2164)
+Completed 200 OK in 35ms (Views: 22.0ms | ActiveRecord: 1.3ms | Allocations: 12334)
+
+
+Started GET "/dealerships/8" for ::1 at 2019-09-04 10:58:23 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 8]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 734)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.4ms | Allocations: 7187)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:58:25 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1920)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 8205)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:58:26 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1451)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 7598)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:59:33 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1259)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2635)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Add A Dealership </h1>
+
+
+<%= form_for(@dealership) do |d| %>
+
+  <%= d.label :name  %>
+  <%= d.text_field :name  %>
+  
+  <h2>Cars</h2>
+    <%= d.fields_for @dealership.cars.build do |car_form| %>
+        <% 3.times %>
+        <div>
+            <%= car_form.label(:make) %>
+            <%= car_form.text_field :make %>
+            <%= car_form.label :model %>
+            <%= car_form.text_field :model %>
+            <%= car_form.label :mileage %>
+            <%= car_form.number_field :mileage %>
+            <%= car_form.label :year %>
+            <%= car_form.number_field :year %>
+        </div>
+        <% end %>
+    <% end %>
+  <%= d.submit %>
+
+<% end %>
+
+):
+1:    <h1>Add A Dealership </h1>
+2:    
+3:    
+4:    <%= form_for(@dealership) do |d| %>
+5:    
+6:      <%= d.label :name  %>
+7:      <%= d.text_field :name  %>
+8:      
+9:      <h2>Cars</h2>
+10:        <%= d.fields_for @dealership.cars.build do |car_form| %>
+11:            <% 3.times %>
+12:            <div>
+13:                <%= car_form.label(:make) %>
+14:                <%= car_form.text_field :make %>
+15:                <%= car_form.label :model %>
+16:                <%= car_form.text_field :model %>
+17:                <%= car_form.label :mileage %>
+18:                <%= car_form.number_field :mileage %>
+19:                <%= car_form.label :year %>
+20:                <%= car_form.number_field :year %>
+21:            </div>
+22:            <% end %>
+23:        <% end %>
+24:      <%= d.submit %>
+25:    
+26:    <% end %>
+  
+app/views/dealerships/new.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/dealerships/new.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/dealerships/new.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/dealerships/new.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/dealerships/new.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/dealerships/new.html.erb:28: syntax error, unexpected end, expecting end-of-input
+Started GET "/dealerships/new" for ::1 at 2019-09-04 10:59:39 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 3464)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 10548)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:01:49 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 21.2ms | Allocations: 9911)
+Completed 200 OK in 38ms (Views: 32.1ms | ActiveRecord: 1.1ms | Allocations: 20196)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:02:41 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"FrIOeuslnfrWptFRrf2SSmMQxWSUjk1Z7eXHVbPFBgFI1DZ9eg8QbEcGq5f5sN1IQUnPXx8nRBZspULbiWVwFQ==", "dealership"=>{"name"=>"Mary's Mobiles", "car"=>{"make"=>"Delorean", "model"=>"WHo Knows", "mileage"=>"88", "year"=>"2015"}}, "commit"=>"Create Dealership"}
+[31mUnpermitted parameter: :car[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.6ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Mary's Mobiles"], ["created_at", "2019-09-04 15:02:41.463293"], ["updated_at", "2019-09-04 15:02:41.463293"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/9
+Completed 302 Found in 10ms (ActiveRecord: 1.9ms | Allocations: 2618)
+
+
+Started GET "/dealerships/9" for ::1 at 2019-09-04 11:02:41 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 9]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 987)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 7705)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:03:15 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"FrIOeuslnfrWptFRrf2SSmMQxWSUjk1Z7eXHVbPFBgFI1DZ9eg8QbEcGq5f5sN1IQUnPXx8nRBZspULbiWVwFQ==", "dealership"=>{"name"=>"Mary's Mobiles2", "car"=>{"make"=>"Delorean", "model"=>"WHo Knows", "mileage"=>"88", "year"=>"2015"}}, "commit"=>"Create Dealership"}
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms | Allocations: 7866)
+
+
+  
+LoadError (dlopen(/Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.7.dylib
+  Referenced from: /Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle
+  Reason: image not found - /Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle):
+  
+app/controllers/dealerships_controller.rb:17:in `create'
+Started POST "/dealerships" for ::1 at 2019-09-04 11:04:22 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"FrIOeuslnfrWptFRrf2SSmMQxWSUjk1Z7eXHVbPFBgFI1DZ9eg8QbEcGq5f5sN1IQUnPXx8nRBZspULbiWVwFQ==", "dealership"=>{"name"=>"Mary's Mobiles2", "car"=>{"make"=>"Delorean", "model"=>"WHo Knows", "mileage"=>"88", "year"=>"2015"}}, "commit"=>"Create Dealership"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1984)
+
+
+  
+LoadError (dlopen(/Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.7.dylib
+  Referenced from: /Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle
+  Reason: image not found - /Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle):
+  
+app/controllers/dealerships_controller.rb:17:in `create'
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:04:27 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3488)
+Completed 200 OK in 34ms (Views: 18.6ms | ActiveRecord: 1.1ms | Allocations: 19972)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:05:01 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"vOfh9OBgXDmCmMIJ/TnLpSt6EppYKhmncdUdA+NoE9LigdnzcUrRrxM4uM+pdISnCSMYodODEOjwlZiN2chlxg==", "dealership"=>{"name"=>"Flatiron Super Cars", "cars_attributes"=>{"0"=>{"make"=>"", "model"=>"", "mileage"=>"", "year"=>""}}}, "commit"=>"Create Dealership"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 3045)
+
+
+  
+LoadError (dlopen(/Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.7.dylib
+  Referenced from: /Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle
+  Reason: image not found - /Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle):
+  
+app/controllers/dealerships_controller.rb:17:in `create'
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:05:42 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3107)
+Completed 200 OK in 31ms (Views: 14.5ms | ActiveRecord: 1.2ms | Allocations: 18780)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:05:56 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"D/Emg69hkzIMwWzbrtITEEuqYYpwL9eGWS8o5GoLDEhRlx6EPksepJ1hFh36n1wSafNrsfuG3snYb61qUKt6XA==", "dealership"=>{"name"=>"Flatiron Super Cars", "cars_attributes"=>{"0"=>{"make"=>"", "model"=>"", "mileage"=>"", "year"=>""}}}, "commit"=>"Create Dealership"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.6ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Flatiron Super Cars"], ["created_at", "2019-09-04 15:05:56.129535"], ["updated_at", "2019-09-04 15:05:56.129535"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["created_at", "2019-09-04 15:05:56.134475"], ["updated_at", "2019-09-04 15:05:56.134475"], ["dealership_id", 10]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/10
+Completed 302 Found in 12ms (ActiveRecord: 2.4ms | Allocations: 4195)
+
+
+Started GET "/dealerships/10" for ::1 at 2019-09-04 11:05:56 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 10]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1073)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.5ms | Allocations: 7787)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:06:12 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"D/Emg69hkzIMwWzbrtITEEuqYYpwL9eGWS8o5GoLDEhRlx6EPksepJ1hFh36n1wSafNrsfuG3snYb61qUKt6XA==", "dealership"=>{"name"=>"Flatiron Super Cars", "cars_attributes"=>{"0"=>{"make"=>"", "model"=>"", "mileage"=>"", "year"=>""}}}, "commit"=>"Create Dealership"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.6ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Flatiron Super Cars"], ["created_at", "2019-09-04 15:06:12.754090"], ["updated_at", "2019-09-04 15:06:12.754090"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mCar Create (0.2ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["created_at", "2019-09-04 15:06:12.757244"], ["updated_at", "2019-09-04 15:06:12.757244"], ["dealership_id", 11]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/11
+Completed 302 Found in 24ms (ActiveRecord: 3.7ms | Allocations: 13770)
+
+
+Started GET "/dealerships/11" for ::1 at 2019-09-04 11:06:12 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 11]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 918)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.4ms | Allocations: 7648)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:06:15 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3093)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 9231)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:06:30 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"EnNXjwXt27ch1tHS9FCT7OBZ+zegQtqk5XvNMPhXFGdMFW+IlMdWIbB2qxSgHdzuwgDxDCvr0+tkO0i+wvdicw==", "dealership"=>{"name"=>"1979", "cars_attributes"=>{"0"=>{"make"=>"", "model"=>"", "mileage"=>"", "year"=>""}}}, "commit"=>"Create Dealership"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.4ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "1979"], ["created_at", "2019-09-04 15:06:30.884846"], ["updated_at", "2019-09-04 15:06:30.884846"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["created_at", "2019-09-04 15:06:30.889386"], ["updated_at", "2019-09-04 15:06:30.889386"], ["dealership_id", 12]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/12
+Completed 302 Found in 11ms (ActiveRecord: 1.9ms | Allocations: 4053)
+
+
+Started GET "/dealerships/12" for ::1 at 2019-09-04 11:06:30 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 12]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 734)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 7186)
+
+
+Started GET "/cars/20" for ::1 at 2019-09-04 11:06:34 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mCar Load (1.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 420)
+Completed 200 OK in 20ms (Views: 13.5ms | ActiveRecord: 1.4ms | Allocations: 7528)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:06:49 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"EnNXjwXt27ch1tHS9FCT7OBZ+zegQtqk5XvNMPhXFGdMFW+IlMdWIbB2qxSgHdzuwgDxDCvr0+tkO0i+wvdicw==", "dealership"=>{"name"=>"1979", "cars_attributes"=>{"0"=>{"make"=>"Honda1", "model"=>"Car", "mileage"=>"2222", "year"=>"2342"}}}, "commit"=>"Create Dealership"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.6ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "1979"], ["created_at", "2019-09-04 15:06:49.082148"], ["updated_at", "2019-09-04 15:06:49.082148"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mCar Create (0.2ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Honda1"], ["model", "Car"], ["year", 2342], ["mileage", 2222], ["created_at", "2019-09-04 15:06:49.087811"], ["updated_at", "2019-09-04 15:06:49.087811"], ["dealership_id", 13]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/13
+Completed 302 Found in 12ms (ActiveRecord: 2.1ms | Allocations: 4065)
+
+
+Started GET "/dealerships/13" for ::1 at 2019-09-04 11:06:49 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 13]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 739)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 7195)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:07:05 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"EnNXjwXt27ch1tHS9FCT7OBZ+zegQtqk5XvNMPhXFGdMFW+IlMdWIbB2qxSgHdzuwgDxDCvr0+tkO0i+wvdicw==", "dealership"=>{"name"=>"1979", "cars_attributes"=>{"0"=>{"make"=>"Honda1", "model"=>"Car", "mileage"=>"2222", "year"=>"2342"}}}, "commit"=>"Create Dealership"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.8ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "1979"], ["created_at", "2019-09-04 15:07:05.079753"], ["updated_at", "2019-09-04 15:07:05.079753"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mCar Create (0.2ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Honda1"], ["model", "Car"], ["year", 2342], ["mileage", 2222], ["created_at", "2019-09-04 15:07:05.083828"], ["updated_at", "2019-09-04 15:07:05.083828"], ["dealership_id", 14]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/14
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms | Allocations: 4065)
+
+
+Started GET "/dealerships/14" for ::1 at 2019-09-04 11:07:05 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 14]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 899)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.5ms | Allocations: 8281)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:07:09 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3360)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 9646)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:07:46 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3396)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 10469)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:08:05 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"K3sKLi8NT/jd/XQmyhoU2ki0AuWvRK5v5adoL2f/l2x1HTIpvifCbkxdDuCeV1vYau0I3iTtpyBk5+2hXV/heA==", "dealership"=>{"name"=>"Stuff", "car"=>{"make"=>"", "model"=>"", "mileage"=>"", "year"=>""}}, "commit"=>"Create Dealership"}
+[31mUnpermitted parameter: :car[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (1.7ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Stuff"], ["created_at", "2019-09-04 15:08:05.811825"], ["updated_at", "2019-09-04 15:08:05.811825"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/15
+Completed 302 Found in 10ms (ActiveRecord: 3.4ms | Allocations: 2538)
+
+
+Started GET "/dealerships/15" for ::1 at 2019-09-04 11:08:05 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 15]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 822)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.3ms | Allocations: 7422)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:08:39 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1703)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 8776)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:08:46 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"57uiHmNz2T4bJ5UctOfqej3K9mWYegNPWEE6VFMnMRK53ZoZ8llUqIqH79rgqqV4H5P8XhPTCgDZAb/aaYdHBg==", "dealership"=>{"name"=>"1979", "car"=>{"make"=>"Something", "model"=>"Bug", "mileage"=>"3", "year"=>"3"}}, "commit"=>"Create Dealership"}
+[31mUnpermitted parameter: :car[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (1.9ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "1979"], ["created_at", "2019-09-04 15:08:46.830337"], ["updated_at", "2019-09-04 15:08:46.830337"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/16
+Completed 302 Found in 9ms (ActiveRecord: 3.2ms | Allocations: 2519)
+
+
+Started GET "/dealerships/16" for ::1 at 2019-09-04 11:08:46 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 16]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 822)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.5ms | Allocations: 7415)
+
+
+Started GET "/dealerships/16" for ::1 at 2019-09-04 11:09:04 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 16]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 822)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.3ms | Allocations: 8207)
+
+
+Started GET "/dealerships/16" for ::1 at 2019-09-04 11:09:05 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 16]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 662)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.3ms | Allocations: 7113)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:09:10 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"57uiHmNz2T4bJ5UctOfqej3K9mWYegNPWEE6VFMnMRK53ZoZ8llUqIqH79rgqqV4H5P8XhPTCgDZAb/aaYdHBg==", "dealership"=>{"name"=>"1979", "car"=>{"make"=>"Something", "model"=>"Bug", "mileage"=>"3", "year"=>"3"}}, "commit"=>"Create Dealership"}
+[31mUnpermitted parameter: :car[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.5ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "1979"], ["created_at", "2019-09-04 15:09:10.288338"], ["updated_at", "2019-09-04 15:09:10.288338"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/17
+Completed 302 Found in 8ms (ActiveRecord: 2.9ms | Allocations: 2514)
+
+
+Started GET "/dealerships/17" for ::1 at 2019-09-04 11:09:10 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 17]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 662)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 7109)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:09:12 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1727)
+Completed 200 OK in 126ms (Views: 123.9ms | ActiveRecord: 0.0ms | Allocations: 8008)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:09:18 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"imI5D1qewjj4ZA6LSx/Ylq4O8f5GSUl5WhFTi2L7WE/UBAEIy7RPrmnEdE0fUpeUjFf7xc3gQDbbUdYFWFsuWw==", "dealership"=>{"name"=>"1979", "cars_attributes"=>{"0"=>{"make"=>"Honda", "model"=>"Accord", "mileage"=>"3", "year"=>"3"}}}, "commit"=>"Create Dealership"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.7ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "1979"], ["created_at", "2019-09-04 15:09:18.584871"], ["updated_at", "2019-09-04 15:09:18.584871"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "Honda"], ["model", "Accord"], ["year", 3], ["mileage", 3], ["created_at", "2019-09-04 15:09:18.589568"], ["updated_at", "2019-09-04 15:09:18.589568"], ["dealership_id", 18]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/18
+Completed 302 Found in 13ms (ActiveRecord: 2.2ms | Allocations: 4065)
+
+
+Started GET "/dealerships/18" for ::1 at 2019-09-04 11:09:18 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 18]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 735)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.4ms | Allocations: 7193)
+
+
+Started GET "/dealerships/18" for ::1 at 2019-09-04 11:09:43 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 18]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 899)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 8279)
+
+
+Started GET "/dealerships/18" for ::1 at 2019-09-04 11:09:46 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 18]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 760)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.6ms | Allocations: 7222)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:09:53 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3378)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 9658)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:10:07 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"1uWaipedPJVOy/7Y5906M4NgJRyT8F+/wRucx8BT17mIg6KNBrexA99rhB6zkHUxoTkvJxhZVvBAWxlJ+vOhrQ==", "dealership"=>{"name"=>"Something that works", "cars_attributes"=>{"0"=>{"make"=>"", "model"=>"", "mileage"=>"", "year"=>""}}}, "commit"=>"Create Dealership"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.7ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Something that works"], ["created_at", "2019-09-04 15:10:07.935768"], ["updated_at", "2019-09-04 15:10:07.935768"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mCar Create (0.7ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["created_at", "2019-09-04 15:10:07.939187"], ["updated_at", "2019-09-04 15:10:07.939187"], ["dealership_id", 19]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/19
+Completed 302 Found in 11ms (ActiveRecord: 2.8ms | Allocations: 4044)
+
+
+Started GET "/dealerships/19" for ::1 at 2019-09-04 11:10:08 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 19]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 735)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.3ms | Allocations: 7184)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:11:38 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 15.8ms | Allocations: 10181)
+Completed 200 OK in 39ms (Views: 31.0ms | ActiveRecord: 1.6ms | Allocations: 20463)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:11:49 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"1iVy1UQaPJz8rTjGYeo1JJGpEi+Ks5U6VNnKw/T1UDaIQ0rS1TCxCm0NQgA1p3oms/AYFAEanHXVmU9NzlUmIg==", "dealership"=>{"name"=>"1979", "car"=>{"make"=>"", "model"=>"", "mileage"=>"", "year"=>""}}, "commit"=>"Create Dealership"}
+[31mUnpermitted parameter: :car[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.5ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "1979"], ["created_at", "2019-09-04 15:11:49.495645"], ["updated_at", "2019-09-04 15:11:49.495645"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/20
+Completed 302 Found in 8ms (ActiveRecord: 1.6ms | Allocations: 2620)
+
+
+Started GET "/dealerships/20" for ::1 at 2019-09-04 11:11:49 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 20]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 987)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.5ms | Allocations: 7711)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:12:04 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3535)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 10431)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:12:15 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"M26v1KogzL7kZhwfJU33/Aj7fmbz5i2yfaINfZrlmeBtCJfTOwpBKHXGZtlxALj+KqJ0XXhPJP384ojzoEXv9A==", "dealership"=>{"name"=>"1979", "car"=>{"make"=>"", "model"=>"", "mileage"=>"", "year"=>""}}, "commit"=>"Create Dealership"}
+[31mUnpermitted parameter: :car[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.6ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "1979"], ["created_at", "2019-09-04 15:12:15.159456"], ["updated_at", "2019-09-04 15:12:15.159456"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/21
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms | Allocations: 2524)
+
+
+Started GET "/dealerships/21" for ::1 at 2019-09-04 11:12:15 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 21]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 848)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.5ms | Allocations: 7452)
+
+
+Started GET "/cars" for ::1 at 2019-09-04 11:12:21 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1235)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.3ms | Allocations: 7738)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:12:30 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3154)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 9118)
+
+
+Started GET "/dealerships" for ::1 at 2019-09-04 11:12:32 -0400
+Processing by DealershipsController#index as HTML
+  Rendering dealerships/index.html.erb within layouts/application
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/dealerships/index.html.erb:4
+  Rendered dealerships/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1305)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.3ms | Allocations: 7395)
+
+
+Started GET "/dealerships/8" for ::1 at 2019-09-04 11:12:36 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 8]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 735)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.5ms | Allocations: 7188)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:12:50 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1878)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 8777)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:13:01 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"YU4M7EJugkKYM6gWvjW/3KgbAQYOKXIjYCc7EL8Rvrs/KDTr00QP1AmT0tDqePDeikILPYWAe2zhZ76ehbHIrw==", "dealership"=>{"name"=>"ads;goifh", "car"=>{"make"=>"adslfg", "model"=>"hreaosdfiu", "mileage"=>"3", "year"=>"5"}}, "commit"=>"Create Dealership"}
+[31mUnpermitted parameter: :car[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.7ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "ads;goifh"], ["created_at", "2019-09-04 15:13:01.626971"], ["updated_at", "2019-09-04 15:13:01.626971"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/22
+Completed 302 Found in 8ms (ActiveRecord: 2.6ms | Allocations: 2514)
+
+
+Started GET "/dealerships/22" for ::1 at 2019-09-04 11:13:01 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 22]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 822)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.3ms | Allocations: 7421)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:14:08 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1570)
+Completed 200 OK in 28ms (Views: 13.9ms | ActiveRecord: 1.2ms | Allocations: 17245)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:14:14 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"UrEL75sJmdWKOOzFFVPtZLDGIJV67eCRFzuKgqoKciwM1zPoCiMUQxuYlgNBHqJmkp8qrvFE6d6Wew8MkKoEOA==", "dealership"=>{"name"=>"1979", "car"=>{"make"=>"adsf", "model"=>"afsd", "mileage"=>"4", "year"=>"4"}}, "commit"=>"Create Dealership"}
+[31mUnpermitted parameter: :car[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.7ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "1979"], ["created_at", "2019-09-04 15:14:14.198045"], ["updated_at", "2019-09-04 15:14:14.198045"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/23
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms | Allocations: 2624)
+
+
+Started GET "/dealerships/23" for ::1 at 2019-09-04 11:14:14 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 23]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 832)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 0.5ms | Allocations: 8899)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:14:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"UrEL75sJmdWKOOzFFVPtZLDGIJV67eCRFzuKgqoKciwM1zPoCiMUQxuYlgNBHqJmkp8qrvFE6d6Wew8MkKoEOA==", "dealership"=>{"name"=>"1979", "car"=>{"make"=>"adsf", "model"=>"afsd", "mileage"=>"4", "year"=>"4"}}, "commit"=>"Create Dealership"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1139)
+
+
+  
+LoadError (dlopen(/Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.7.dylib
+  Referenced from: /Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle
+  Reason: image not found - /Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle):
+  
+app/controllers/dealerships_controller.rb:17:in `create'
+Started POST "/dealerships" for ::1 at 2019-09-04 11:14:56 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"UrEL75sJmdWKOOzFFVPtZLDGIJV67eCRFzuKgqoKciwM1zPoCiMUQxuYlgNBHqJmkp8qrvFE6d6Wew8MkKoEOA==", "dealership"=>{"name"=>"1979", "car"=>{"make"=>"adsf", "model"=>"afsd", "mileage"=>"4", "year"=>"4"}}, "commit"=>"Create Dealership"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 3046)
+
+
+  
+LoadError (dlopen(/Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.7.dylib
+  Referenced from: /Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle
+  Reason: image not found - /Users/paul.nicholsen/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/x86_64-darwin17/readline.bundle):
+  
+app/controllers/dealerships_controller.rb:17:in `create'
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:16:14 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1831)
+Completed 200 OK in 27ms (Views: 13.9ms | ActiveRecord: 1.2ms | Allocations: 18286)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:16:24 -0400
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1375)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 7515)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:16:34 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"XxC2l6/XePtdupJsaXFzg+mAVRjmsFn+I5KtmdvWzSUBdo6QPv31bcwa6Ko9PDyBy9lfI20ZULGi0igX4Xa7MQ==", "dealership"=>{"name"=>"asdf", "cars_attributes"=>{"0"=>{"make"=>"fasdf", "model"=>"adfs", "mileage"=>"5", "year"=>"5"}}}, "commit"=>"Create Dealership"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.7ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "asdf"], ["created_at", "2019-09-04 15:16:34.315245"], ["updated_at", "2019-09-04 15:16:34.315245"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "fasdf"], ["model", "adfs"], ["year", 5], ["mileage", 5], ["created_at", "2019-09-04 15:16:34.318770"], ["updated_at", "2019-09-04 15:16:34.318770"], ["dealership_id", 24]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/24
+Completed 302 Found in 10ms (ActiveRecord: 2.5ms | Allocations: 4213)
+
+
+Started GET "/dealerships/24" for ::1 at 2019-09-04 11:16:34 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 24]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1073)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.4ms | Allocations: 7790)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:16:48 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1487)
+Completed 200 OK in 638ms (Views: 595.8ms | ActiveRecord: 1.3ms | Allocations: 20107)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:16:54 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"eONDVE+Rpcr8JwUToTM9PjTwaF37ly/p72RMzZBNoyImhXtT3rsoXG2Hf9X1fnI8FqliZnA+JqZuJMlDqu3VNg==", "dealership"=>{"name"=>"asfd", "cars_attributes"=>{"0"=>{"make"=>"asdf", "model"=>"sadf", "mileage"=>"3", "year"=>"5"}}}, "commit"=>"Create Dealership"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (0.7ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "asfd"], ["created_at", "2019-09-04 15:16:54.845506"], ["updated_at", "2019-09-04 15:16:54.845506"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mCar Create (0.2ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "year", "mileage", "created_at", "updated_at", "dealership_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["make", "asdf"], ["model", "sadf"], ["year", 5], ["mileage", 3], ["created_at", "2019-09-04 15:16:54.849251"], ["updated_at", "2019-09-04 15:16:54.849251"], ["dealership_id", 25]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/25
+Completed 302 Found in 11ms (ActiveRecord: 2.0ms | Allocations: 4223)
+
+
+Started GET "/dealerships/25" for ::1 at 2019-09-04 11:16:54 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 25]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 909)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.4ms | Allocations: 7493)
+
+
+Started GET "/dealerships/new" for ::1 at 2019-09-04 11:17:30 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#new as HTML
+  Rendering dealerships/new.html.erb within layouts/application
+  Rendered dealerships/new.html.erb within layouts/application (Duration: 14.4ms | Allocations: 8254)
+Completed 200 OK in 30ms (Views: 22.6ms | ActiveRecord: 1.3ms | Allocations: 18511)
+
+
+Started POST "/dealerships" for ::1 at 2019-09-04 11:17:36 -0400
+Processing by DealershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"Wmz4DdjYm09Cr7dEFd/hih5KojBmR6qe8YBXZzGe8LkECsAKSfIW2dMPzYJBkq6IPBOoC+3uo9FwwNLpCz6GrQ==", "dealership"=>{"name"=>"1979", "car"=>{"make"=>"fassdf", "model"=>"f", "mileage"=>"65", "year"=>"6"}}, "commit"=>"Create Dealership"}
+[31mUnpermitted parameter: :car[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[36mDealership Create (1.2ms)[0m  [1m[32mINSERT INTO "dealerships" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "1979"], ["created_at", "2019-09-04 15:17:36.470298"], ["updated_at", "2019-09-04 15:17:36.470298"]]
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dealerships_controller.rb:17:in `create'
+Redirected to http://localhost:3000/dealerships/26
+Completed 302 Found in 8ms (ActiveRecord: 2.9ms | Allocations: 2623)
+
+
+Started GET "/dealerships/26" for ::1 at 2019-09-04 11:17:36 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 26]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 987)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.4ms | Allocations: 7709)
+
+
+Started GET "/dealerships/26" for ::1 at 2019-09-04 11:17:42 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 26]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 822)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.4ms | Allocations: 8201)
+
+
+Started GET "/cars/17" for ::1 at 2019-09-04 11:18:53 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 419)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 7535)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/paul.nicholsen/.rvm/gems/ruby-2.6.1/bin/rake:23)
+Started GET "/dealerships/8" for ::1 at 2019-09-04 11:21:34 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 8]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 10.8ms | Allocations: 7338)
+Completed 200 OK in 32ms (Views: 19.8ms | ActiveRecord: 2.0ms | Allocations: 18228)
+
+
+Started GET "/dealerships/8/cars/17" for ::1 at 2019-09-04 11:21:39 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"dealership_id"=>"8", "id"=>"17"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:11:in `show'
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 420)
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 0.3ms | Allocations: 7557)
+
+
+Started GET "/cars" for ::1 at 2019-09-04 11:25:48 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 6353)
+Completed 200 OK in 251ms (Views: 247.9ms | ActiveRecord: 0.9ms | Allocations: 13160)
+
+
+Started GET "/dealerships/1/cars" for ::1 at 2019-09-04 11:25:57 -0400
+Processing by CarsController#index as HTML
+  Parameters: {"dealership_id"=>"1"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:5:in `index'
+Completed 404 Not Found in 6ms (ActiveRecord: 1.0ms | Allocations: 2227)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Dealership with 'id'=1):
+  
+app/controllers/cars_controller.rb:5:in `index'
+Started GET "/dealerships/5/cars" for ::1 at 2019-09-04 11:26:01 -0400
+Processing by CarsController#index as HTML
+  Parameters: {"dealership_id"=>"5"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:5:in `index'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1079)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Dealership with 'id'=5):
+  
+app/controllers/cars_controller.rb:5:in `index'
+Started GET "/dealerships/7/cars" for ::1 at 2019-09-04 11:26:09 -0400
+Processing by CarsController#index as HTML
+  Parameters: {"dealership_id"=>"7"}
+  [1m[36mDealership Load (0.1ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:5:in `index'
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 7]]
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 812)
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 0.3ms | Allocations: 9747)
+
+
+Started GET "/dealerships/9/cars" for ::1 at 2019-09-04 11:26:12 -0400
+Processing by CarsController#index as HTML
+  Parameters: {"dealership_id"=>"9"}
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:5:in `index'
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 9]]
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 643)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.5ms | Allocations: 7129)
+
+
+Started GET "/dealerships" for ::1 at 2019-09-04 11:26:17 -0400
+Processing by DealershipsController#index as HTML
+  Rendering dealerships/index.html.erb within layouts/application
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships"[0m
+  ↳ app/views/dealerships/index.html.erb:4
+  Rendered dealerships/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1488)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 7737)
+
+
+Started GET "/dealerships/7" for ::1 at 2019-09-04 11:26:19 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (1.8ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 7]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 662)
+Completed 200 OK in 467ms (Views: 460.4ms | ActiveRecord: 2.0ms | Allocations: 7117)
+
+
+Started GET "/dealerships/6" for ::1 at 2019-09-04 11:26:21 -0400
+Processing by DealershipsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDealership Load (0.2ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/dealerships_controller.rb:8:in `show'
+  Rendering dealerships/show.html.erb within layouts/application
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 6]]
+  ↳ app/views/dealerships/show.html.erb:6
+  Rendered dealerships/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1482)
+Completed 200 OK in 24ms (Views: 20.0ms | ActiveRecord: 0.6ms | Allocations: 7843)
+
+
+Started GET "/dealerships/6/cars" for ::1 at 2019-09-04 11:26:26 -0400
+Processing by CarsController#index as HTML
+  Parameters: {"dealership_id"=>"6"}
+  [1m[36mDealership Load (0.3ms)[0m  [1m[34mSELECT "dealerships".* FROM "dealerships" WHERE "dealerships"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:5:in `index'
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."dealership_id" = ?[0m  [["dealership_id", 6]]
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 818)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.5ms | Allocations: 7306)
+
+
