@@ -1,0 +1,7 @@
+<h1>Sightings</h1>
+
+<ul>
+    <% @sightings.each do |s| %>
+        <li><%= s.created_at %>: <%= link_to "#{s.user.username} observed #{s.tree.common_name}", sighting_path(s) %></li>
+    <% end %>
+</ul>

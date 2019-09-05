@@ -1,0 +1,7 @@
+<h1>Sighting by <%= @sighting.user.first_name + " " + @sighting.user.last_name %> </h1>
+<p>Tree species: <%= link_to @sighting.tree.common_name, tree_path(@sighting.tree) %> (<%= @sighting.tree.binomial_name %>)</p>
+<p>Location: <%= @sighting.city %>, <%= @sighting.state %></p>
+<p>Condition: <%= @sighting.condition %> out of 10</p>
+<img src= <%= @sighting.image %> >
+
+<%= link_to "Delete this sighting", sighting_path(@sighting), method: :delete %>

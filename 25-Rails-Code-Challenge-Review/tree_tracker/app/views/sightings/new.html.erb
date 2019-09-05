@@ -1,0 +1,43 @@
+<h1>Record a new observation</h1>
+
+<% if @sighting.errors.any? %>
+    <ul><% @sighting.errors.full_messages.each do |m| %>
+        <li> <%= m %> </li>
+    <% end %></ul>
+<% end %>
+
+<%= form_for @sighting do |f| %>
+    <%= f.label :username %>
+    <%= f.collection_select :user_id, User.all, :id, :username, prompt: true%>
+
+    <br><br>
+
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+    <%= f.label :state %>
+    <%= f.select :state, Sighting.state_codes, prompt: true%>
+
+    <h4>What tree did you see?</h4>
+    <%= f.collection_select :tree_id, Tree.all, :id, :common_name, prompt: true %>
+    <br><br>
+    <%= f.label :tree_condition %>
+    <%= f.number_field :condition %>
+
+    <h4>Tree not in our list? Add it here:</h4>
+    <%= f.fields_for :tree do |t| %>
+        <%= t.label :common_name %>
+        <%= t.text_field :common_name %>
+        <%= t.label :binomial_name %>
+        <%= t.text_field :binomial_name %>
+        <%= t.label :category %>
+        <%= t.select :category, %w(deciduous evergreen), prompt: true %>
+        <br><br>
+        <%= t.label :optional_etymological_fact %>
+        <%= t.text_area :etymological_fact %>
+        <br><br>
+        <%= t.label :upload_a_picture_to_aid_identification %>
+        <%= t.text_field :leaf_image %>
+    <% end %>
+    <br><br>
+    <%= f.submit %>
+<% end %>

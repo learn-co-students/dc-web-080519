@@ -1,0 +1,6 @@
+<h2> <%= @tree.common_name %> </h2>
+<p>Scientific name: <%= @tree.binomial_name %> </p>
+<% if @tree.etymological_fact %>
+    <p> Did you know? <%= @tree.etymological_fact %> </p>
+<% end %>
+<img src= <%= @tree.leaf_image %> >

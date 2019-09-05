@@ -1,0 +1,6 @@
+<h2>Observed Trees</h2>
+<ul>
+    <% @trees.each do |tree| %>
+        <li> <%= link_to tree.common_name, tree_path(tree) %> </li>
+    <% end %>
+</ul>
