@@ -1,6 +1,7 @@
 <h1>Retailers#show</h1>
 
 <h2><%= @retailer.name %></h2>
+<h4><%= "Established in #{@retailer.year_established}" %></h4>
 
 <% if !@retailer.snacks.empty? %>
     <h3>Yummy Snacks</h3>

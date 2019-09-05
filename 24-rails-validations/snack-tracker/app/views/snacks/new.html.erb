@@ -1,5 +1,7 @@
 <h1>Create a New Snack</h1>
 
+<%= render partial: "shared/error_list", locals: {new_object: @snack} %>
+
 <%= form_for @snack do |f| %>
     <%= f.label :name %>
     <%= f.text_field :name %>
@@ -8,7 +10,7 @@
     <%= f.label :deliciousness %>
     <%= f.select :deliciousness, (1..10) %>
     <%= f.label :retailer %>
-    <%= f.collection_select :retailer_id, @retailer_collection, :id, :name_and_year %>
+    <%= f.collection_select :retailer_id, Retailer.all, :id, :name_and_year %>
     <%= f.submit %>
 
 <% end %>
