@@ -1,0 +1,11 @@
+<h1>Snacks#show</h1>
+
+<h2><%= @snack.name %></h2>
+
+<div>Calories: <%= @snack.calories %></div>
+<div>Deliciousness: <%= @snack.deliciousness %></div>
+
+<div>Retailer: <%= link_to @snack.retailer.name, retailer_path(@snack.retailer.id) %></div>
+
+<%= link_to "Delete this snack", snack_path(@snack), method: "DELETE" %>
+<%= link_to "Index Page", snacks_path %>

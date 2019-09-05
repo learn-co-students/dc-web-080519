@@ -1,0 +1,10 @@
+<h1>Retailers#show</h1>
+
+<h2><%= @retailer.name %></h2>
+
+<% if !@retailer.snacks.empty? %>
+    <h3>Yummy Snacks</h3>
+    <% @retailer.snacks.each do |snack| %>
+        <div><%= link_to snack.name, snack_path(snack) %></div>
+    <% end %>
+<% end %>

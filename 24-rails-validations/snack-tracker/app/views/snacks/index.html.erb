@@ -1,0 +1,8 @@
+<h1>Snacks#index</h1>
+
+<% @snacks.each do |snack| %>
+    <div><%= link_to snack.name, snack_path(snack) %>
+    </div>
+<% end %>
+
+<%= link_to "Home Page", home_view_path %>
