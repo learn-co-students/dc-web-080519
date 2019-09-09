@@ -1,0 +1,14 @@
+<%= form_for(@car) do |f| %>
+  <%= f.label(:make) %>
+  <%= f.text_field :make %>
+  <%= f.label :model %>
+  <%= f.text_field :model %>
+  <%= f.label :mileage %>
+  <%= f.number_field :mileage %>
+  <%= f.label :year %>
+  <%= f.number_field :year %>
+
+  <%= f.collection_select(:dealership_id, Dealership.all, :id, :name ) %>
+
+  <%= f.submit "Sell us this car!" %>
+<% end %>
