@@ -26,4 +26,4 @@ App privileges!
 - car `delete` button only if logged in
   - conditional render
   - let them see the button
-    - if they are not logged in, redirect 
+    - Once they click, if they are not logged in, redirect them to log in
