@@ -25,5 +25,5 @@ App privileges!
   - shouldnt be able to even see the form
 - car `delete` button only if logged in
   - conditional render
-  - let them see the button, if they click it
+  - let them see the button
     - if they are not logged in, redirect 
