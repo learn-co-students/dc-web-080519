@@ -1,0 +1,21 @@
+<h1>Test Drive this <%= @car.make %>?</h1>
+
+<% if current_user %>
+  <% if @car.make == current_user.favorite_make %>
+    <p>This is your favorite make!</p>
+  <% end %>
+<% end %>
+
+<p><%= @car.year %></p>
+<p><%= @car.model %></p>
+<p>Only <%= @car.mileage %> miles!</p>
+
+<p> From your friends at: <%= link_to @car.dealership.name, dealership_path(@car.dealership) %></p>
+
+
+  <%= form_tag "/cars/#{@car.id}", method: "delete" do %>
+    <%= submit_tag "Buy It!" %>
+  <% end %>
+
+
+<%= link_to "Back to Showroom", cars_path %>
