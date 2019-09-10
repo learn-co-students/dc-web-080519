@@ -1,0 +1,6 @@
+<h1>All Dealerships (compare and save!!!) </h1>
+
+
+<% @dealerships.each do |ds| %>
+  <p><%= link_to( ds.name , dealership_path(ds) ) %></p>
+<% end %>
