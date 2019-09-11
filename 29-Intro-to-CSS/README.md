@@ -1,9 +1,9 @@
-#CSS Lecture
+# CSS Lecture
 
-##What is CSS?
+## What is CSS?
 - Cascading Style Sheets
 
-##How can we use it?
+## How can we use it?
 - Inline styling
 - Internal stylesheet
 - External stylesheet
