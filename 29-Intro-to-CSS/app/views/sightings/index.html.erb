@@ -1,0 +1,9 @@
+<div class="heading secondary-header">All Sightings</div>
+
+<div class="gallery">
+    <% @sightings.each do |s| %>
+            <%= link_to sighting_path(s) do %>
+                <img class = "gallery-image" src= <%= s.image ||= "https://image.flaticon.com/icons/png/512/46/46564.png"%>>
+            <% end %>
+    <% end %>
+</div>

@@ -1,0 +1,11 @@
+<div class="heading secondary-header"> Sighting of <%= @sighting.tree.common_name %></div>
+
+<div class="wrapper">
+    <img class="tree-image" src=<%= @sighting.image %>>
+    <p>Observed by <%= @sighting.user.first_name %> <%= @sighting.user.last_name %> at <%= @sighting.created_at %></p>
+    <p>Location: <%= @sighting.city %>, <%= @sighting.state %> </p>
+    <p>Condition: <%= @sighting.condition %> out of 10 </p>
+    <div class="tree-page-link">
+        <%= link_to "See more information about #{@sighting.tree.common_name}s", tree_path(@sighting.tree), class: "ui yellow button"%>
+    </div>
+</div>

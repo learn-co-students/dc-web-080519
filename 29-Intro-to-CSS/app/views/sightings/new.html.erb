@@ -1,0 +1,66 @@
+<div class="heading secondary-header">Record a sighting</div>
+
+<% if @sighting.errors.any? %>
+    <ul><% @sighting.errors.full_messages.each do |msg| %>
+        <li> <%= msg %> </li>
+    <% end %> </ul>
+<% end %>
+
+<div class="sighting-form">
+<%= form_for @sighting, :html => {:class => "ui form"} do |s| %>
+    <h4 class="ui dividing header">User Information</h4>
+
+    <div class="field">
+        <%= s.label :username %>
+        <%= s.collection_select :user_id, User.all, :id, :username, prompt: true %>
+    </div>
+
+    <h4 class="ui dividing header">Sighting Details</h4>
+    <div class="field">
+        <%= s.label "Location" %>
+        <div class="two fields">
+            <div class="field"><%= s.text_field :city, placeholder: "City"%></div>
+            <div class="field"><%= s.text_field :state, placeholder: "State" %></div>
+        </div>
+    </div>
+
+    <div class="field">
+        <%= s.label :tree_condition %>
+        <%= s.number_field :condition %>
+    </div>
+
+    <h4 class="ui dividing header">What kind of tree did you see?</h4>
+    <div class="field">
+        <%= s.label :tree %>
+        <%= s.collection_select :tree_id, Tree.all, :id, :common_name, prompt: true %>
+    </div>
+
+    <h4 class="ui dividing header">Tree not on our list? Add a new one:</h4>
+    <%= s.fields_for :tree do |t| %>
+        <div class="field">
+            <%= t.label "Name" %>
+            <div class="two fields">
+                <div class="field"><%= t.text_field :common_name, placeholder: "Common name" %></div>
+                <div class="field"><%= t.text_field :binomial_name, placeholder: "Scientific name" %></div>
+            </div>
+        </div>
+
+        <div class="field">
+            <%= t.label :category %>
+            <%= t.select :category, %w(deciduous evergreen), prompt: true %>
+        </div>
+        
+        <div class="field">
+            <%= t.label :identifying_image %>
+            <%= t.text_field :id_image, placeholder: "Add url here" %>
+        </div>
+
+        <div class="field">
+            <%= t.label :optional_etymological_fact %>
+            <%= t.text_area :fact %>
+        </div>
+    <% end %>
+
+    <%= s.submit 'Record sighting', class: "ui yellow button" %>
+<% end %>
+<div>
