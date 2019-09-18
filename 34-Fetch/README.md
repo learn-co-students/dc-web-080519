@@ -9,11 +9,12 @@
 ### Who's Keeping This Timer?
 - How come we can have "non-blocking code"?
   - Introducing .... WebAPIs
+    - Application Programming Interface
 
 ### How do we handle async code?
 - For example:
-.addEventListener
-.setTimeout
+.addEventListener -> callback
+.setTimeout -> callback
 
 - So what would server communication look like since it's async?
 - https://pokeapi.co/api/v2/pokemon
