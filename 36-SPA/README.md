@@ -3,7 +3,7 @@
 - Wikipedia vs Gmail
 - SPA is the preferred user experience
 
-- When <some event> happens, I want to make a <what kind of> fetch call, and manipulate the DOM <how?>
+- When `some event` happens, I want to make a `what kind of` fetch call, and manipulate the DOM `how?`
 
 ### Mocking your own backend
 ```
