@@ -1,0 +1,20 @@
+body {
+    background-color: white;
+}
+
+#page-header {
+    padding: 10px;
+    background-color: peru;
+}
+
+#main-div {
+    padding: 20px;
+}
+
+#pet-photo {
+    height: 150px;
+}
+
+.photo-div {
+    text-align: center;
+}
