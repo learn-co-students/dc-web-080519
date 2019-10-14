@@ -2,17 +2,17 @@ import React, { Fragment } from 'react'
 import MoreButton from '../components/MoreButton'
 import Sushi from '../components/Sushi'
 
-const SushiContainer = (props) => {
+const SushiContainer = ({sushis, handleMoreButton, handleEatSushi, eatenSushi}) => {
 
-  console.log(props.sushis);
+  console.log(sushis);
 
   return (
     <Fragment>
       <div className="belt">
         {
-          props.sushis.map(sushiObj => <Sushi sushi={sushiObj} handleEatSushi={props.handleEatSushi} sushiIsEaten={props.eatenSushi.includes(sushiObj)}/>)
+          sushis.map(sushiObj => <Sushi sushi={sushiObj} handleEatSushi={handleEatSushi} sushiIsEaten={eatenSushi.includes(sushiObj)}/>)
         }
-        <MoreButton handleMoreButton={props.handleMoreButton} />
+        <MoreButton handleMoreButton={handleMoreButton} />
       </div>
     </Fragment>
   )

@@ -53,11 +53,14 @@ class App extends Component {
   }
 
   render() {
+    const { state, handleForm, handleMoreButton, handleEatSushi } = this
+    const { sushiCollection, index, eatenSushi, wallet } = state
+
     return (
       <div className="app">
-        <MoneyForm handleForm={this.handleForm}/>
-        <SushiContainer sushis={this.state.sushiCollection.slice(this.state.index, this.state.index+4)} handleMoreButton={this.handleMoreButton} handleEatSushi={this.handleEatSushi} eatenSushi={this.state.eatenSushi} />
-        <Table wallet={this.state.wallet} eatenSushi={this.state.eatenSushi}/>
+        <MoneyForm handleForm={handleForm}/>
+        <SushiContainer sushis={sushiCollection.slice(index, index+4)} handleMoreButton={handleMoreButton} handleEatSushi={handleEatSushi} eatenSushi={eatenSushi} />
+        <Table wallet={wallet} eatenSushi={eatenSushi}/>
       </div>
     );
   }
