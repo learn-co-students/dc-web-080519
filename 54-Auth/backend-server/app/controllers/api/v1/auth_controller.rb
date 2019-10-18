@@ -7,11 +7,13 @@ class Api::V1::AuthController < ApplicationController
   def create # POST /api/v1/login
     user = User.find_by(username: params["username"])
     if (user && user.authenticate(params["password"]) )
+      token = encode({user_id: user.id})
       # the username exists AND the password matches
       render json: {
         success: true,
         message: "Successfully logged in",
-        user_data: user
+        user_data: user,
+        token: token
       }, status: :accepted
     else
       # either the username does ot exist OR the password is invalid for the user

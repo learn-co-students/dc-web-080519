@@ -2,9 +2,12 @@ import React, { Fragment } from "react";
 import { NavLink, withRouter } from "react-router-dom";
 import { Menu } from "semantic-ui-react";
 
-const Nav = ({ location: { pathname } }) => {
-  let logged_in = false;
-  let logout = () => console.log("this should log us out...");
+const Nav = ({ location: { pathname } , logged_in, onChangeUser}) => {
+  let logout = () => {
+    localStorage.removeItem("jwt")
+    onChangeUser(null)
+  }
+
   return (
     <Menu pointing secondary>
       {logged_in ? (

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       # post '/fakelogin', to: 'auth#fake_create'
 
       post '/login', to: 'auth#create'
+      get '/profile', to: 'users#profile'
 
     end
 

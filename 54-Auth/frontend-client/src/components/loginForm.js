@@ -29,6 +29,8 @@ class LoginForm extends React.Component {
     })
     .then(data => {
       if(data.success){
+        console.log(data.token)
+        localStorage.setItem("jwt", data.token)
         this.props.onChangeUser(data.user_data)
       }else{
         alert(data.message)

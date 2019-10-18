@@ -76,8 +76,8 @@ Re-migrate and re-seed the database
 - send back a 'token' as data
 - Plays the same role - authenticate who we are
 
-- How do we generate the token?
-- How do we send it to the client?
+X How do we generate the token?
+X How do we send it to the client?
 - How do we store it on the client?
 - How do we send it back and read it?
 
