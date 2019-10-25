@@ -28,10 +28,10 @@ The steps we'll follow when we're thinking in Redux resemble our Thinking In Rea
   - Connect actions to components with `mapDispatchToProps`
 
 ## Things that need fixing
- - Searchbar
- - PaintingList
- - PaintingDetail
- - PaintingForm
+ X Searchbar
+ X PaintingList
+ X PaintingDetail
+ X PaintingForm
 
 ```
 function updatePaintingInfo(payload){

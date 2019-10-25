@@ -1,10 +1,8 @@
 import React from "react";
 import {connect} from 'react-redux'
+import {onChange} from '../redux/action'
 
-//need to read from the store
-//needs to write to the store
 const Searchbar = props => {
-  console.log("Searchbar props: ", props)
   return (
   <div className="ui container">
     <div className="ui very large fluid input">
@@ -30,10 +28,9 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => {
-  //props: ()=>{dispatch()}
   return {
-    onChange: (searchText)=>{ dispatch( {type: "CHANGE_SEARCH", payload: searchText} ) }
+    onChange: (searchText)=>{ dispatch( onChange(searchText) ) }
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Searchbar);
+export default connect(mapStateToProps, {onChange})(Searchbar);

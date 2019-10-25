@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
+import {connect} from 'react-redux'
+import {updatePaintingInfo} from '../redux/action'
 
 class PaintingForm extends React.Component {
   constructor(props) {
@@ -72,4 +74,19 @@ class PaintingForm extends React.Component {
   }
 }
 
-export default PaintingForm;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    painting: state.paintings.find(
+      painting => painting.id === ownProps.match.params.paintingId
+    )
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    //props: ()=>{dispatch({})}
+    updatePaintingInfo: (info) => {dispatch( updatePaintingInfo(info) )}
+  }
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(PaintingForm));
